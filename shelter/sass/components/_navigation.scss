@@ -1,0 +1,30 @@
+.navigation-list{
+  display: flex;
+
+  & li{
+    margin-left: 35px;
+    & a{
+      line-height: 160%;
+      color: $grey;
+    }
+  }
+}
+
+.header-nav-link{
+  position: relative;
+
+  &::after{
+    content: " ";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -2px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $beige;
+    border-radius: 2px;
+  }
+}

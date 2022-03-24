@@ -1,0 +1,34 @@
+body {
+  color: $dark;
+  background-color: $white;
+  font-family: "Arial MT W01 Regular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+.animation {
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 40px;
+}

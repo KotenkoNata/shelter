@@ -34,7 +34,7 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -346,6 +346,90 @@ template {
 @font-face {
   font-family: "Georgia W05 Italic5162255";
   src: url("//fast.fonts.net/dv2/14/4432f89c-15b4-4635-a1d9-811d4b57d312.woff2?d44f19a684109620e484147fa790e81859e92aaaea3d337f84586d5df8888fe5455f55e0f83ed0be044ddfaa95e824a4b1318d5b552aaa24a44025e9&projectid=74f39a9d-a5dc-405f-9690-1c1fd4590ae4") format("woff2"), url("//fast.fonts.net/dv2/3/4e39a326-f0e7-4c52-890e-0305a66e0f41.woff?d44f19a684109620e484147fa790e81859e92aaaea3d337f84586d5df8888fe5455f55e0f83ed0be044ddfaa95e824a4b1318d5b552aaa24a44025e9&projectid=74f39a9d-a5dc-405f-9690-1c1fd4590ae4") format("woff");
+}
+body {
+  color: #4C4C4C;
+  background-color: #FFFFFF;
+  font-family: "Arial MT W01 Regular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #545454;
+}
+
+.animation {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 40px;
+}
+
+.logo-title {
+  color: #F1CDB3;
+  font-family: "Georgia W05 Regular5162277";
+  font-size: 32px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.logo-text {
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  margin: 10px 0 0 0;
+}
+
+.navigation-list {
+  display: flex;
+}
+.navigation-list li {
+  margin-left: 35px;
+}
+.navigation-list li a {
+  line-height: 160%;
+  color: #CDCDCD;
+}
+
+.header-nav-link {
+  position: relative;
+}
+.header-nav-link::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #F1CDB3;
+  border-radius: 2px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 /*# sourceMappingURL=main.css.map */
