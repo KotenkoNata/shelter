@@ -382,6 +382,16 @@ img {
   padding: 0 40px;
 }
 
+.section-title {
+  font-family: "Georgia W05 Regular5162277";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  margin: 0 0 25px 0;
+}
+
 .logo-title {
   color: #F1CDB3;
   font-family: "Georgia W05 Regular5162277";
@@ -448,7 +458,6 @@ button {
 #Only {
   background: url("./../assets/images/startScreen.png") no-repeat center -180px;
   height: 728px;
-  padding-top: 163px;
 }
 #Only h2 {
   color: #FFFFFF;
@@ -463,11 +472,31 @@ button {
 }
 
 .only-head-container {
+  padding-top: 163px;
   width: 400px;
 }
 
 .only-text-container {
   width: 472px;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 100px 0;
+}
+#about .about-text-container {
+  width: 430px;
+}
+#about .about-image-container {
+  margin-right: 120px;
+}
+#about .first {
+  margin-bottom: 25px;
+}
+#about p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

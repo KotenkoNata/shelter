@@ -1,8 +1,7 @@
 #Only{
   background: url("./../assets/images/startScreen.png") no-repeat center -180px;
   height: 728px;
-  //background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-padding-top: 163px;
+
   & h2{
     color: $white;
     font-family: "Georgia W05 Regular5162277";
@@ -18,6 +17,7 @@ padding-top: 163px;
 }
 
 .only-head-container{
+  padding-top: 163px;
   width: 400px;
 }
 

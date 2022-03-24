@@ -1,0 +1,23 @@
+#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 80px 0 100px 0;
+
+  & .about-text-container{
+    width: 430px;
+  }
+  & .about-image-container{
+    margin-right: 120px;
+  }
+
+  & .first{
+    margin-bottom: 25px;
+  }
+
+  & p{
+    margin: 0;
+  }
+}
+
