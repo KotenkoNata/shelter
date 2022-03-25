@@ -15,16 +15,57 @@
 
 .friend-list{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   & li{
     background-color: $grey-white;
     text-align: center;
 
+    margin-right: 90px;
+
+    &:nth-child(1){
+      margin-right: 53px;
+    }
+
+    &:nth-child(4){
+      margin-right: 53px;
+    }
+
+    &:nth-child(5){
+      margin: 0;
+    }
+
+
+    &.arrow-item{
+      background-color: transparent;
+    }
+
+    & p{
+      margin: 30px 0;
+
+      font-family:"Georgia W05 Regular5162277";
+      font-style: normal;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 0.06em;
+    }
+
+    & button{
+      margin-bottom: 30px;
+
+      &.arrow{
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid $beige;
+        padding: 13px 17px;
+        margin: 0;
+      }
+    }
+
   }
 }
 
-.friend-link{
-
+.friend-center-button{
+  margin: 60px 0 0 0;
 }
