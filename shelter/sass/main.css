@@ -419,6 +419,10 @@ button {
   letter-spacing: 0.06em;
   color: #292929;
 }
+button.light-button {
+  background-color: #FFFFFF;
+  border: 2px solid #F1CDB3;
+}
 
 .navigation-list {
   display: flex;
@@ -497,6 +501,29 @@ button {
 }
 #about p {
   margin: 0;
+}
+
+#friends {
+  background-color: #F6F6F6;
+  padding: 80px 0 100px 0;
+}
+#friends .section-title {
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.friend-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friend-list li {
+  background-color: #FAFAFA;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
