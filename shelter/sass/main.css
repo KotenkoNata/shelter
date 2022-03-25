@@ -562,4 +562,37 @@ button.light-button {
   margin: 60px 0 0 0;
 }
 
+#help {
+  padding: 80px 85px 100px 85px;
+}
+#help .section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#help ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#help ul li {
+  text-align: center;
+  margin-right: 120px;
+  margin-bottom: 55px;
+}
+#help ul li:nth-child(5) {
+  margin-right: 0;
+}
+#help ul li:nth-child(9) {
+  margin-right: 0;
+}
+#help ul li p {
+  font-family: "Georgia W05 Regular5162277";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  margin: 22px 0 0 0;
+}
+
 /*# sourceMappingURL=main.css.map */

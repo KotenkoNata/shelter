@@ -1,0 +1,39 @@
+#help{
+  padding: 80px 85px 100px 85px;
+
+  & .section-title{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  & ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & li{
+      text-align: center;
+
+      margin-right: 120px;
+      margin-bottom: 55px;
+
+      &:nth-child(5){
+        margin-right: 0;
+      }
+      &:nth-child(9){
+        margin-right: 0;
+      }
+
+      & p{
+        font-family:"Georgia W05 Regular5162277";
+        font-style: normal;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+
+        margin: 22px 0 0 0;
+      }
+    }
+  }
+}
