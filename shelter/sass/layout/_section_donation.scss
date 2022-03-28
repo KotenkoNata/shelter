@@ -1,0 +1,67 @@
+#donation{
+  background-color: $light-grey;
+  color: $dark-grey;
+
+  padding: 80px 0 110px 0;
+
+
+  & .section-title{
+    text-align: left;
+    margin: 0 0 20px 0;
+  }
+
+  & .donation-image-container{
+margin-right: 30px;
+  }
+
+  & .donation-text-container{
+    width: 380px;
+
+    & .donation-bank{
+      font-family:"Georgia W05 Regular5162277";
+      line-height: 110%;
+      letter-spacing: 0.06em;
+      margin: 0 0 20px 0;
+
+    }
+  }
+
+}
+
+.donation-card-link{
+  background-color: $beige;
+  padding: 10px 15px;
+  border-radius: 9px;
+
+  display: inline-flex;
+
+  & span{
+    margin-left: 15px;
+
+    font-family:"Georgia W05 Regular5162277";
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+
+  & svg{
+    margin-left: 1px;
+  }
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donation-italic-text{
+  font-family:"Arial MT W01 Regular";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $grey-italic;
+
+  margin: 20px 0 0 0;
+}
