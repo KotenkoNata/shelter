@@ -1,0 +1,73 @@
+footer{
+  background: url("./../assets/images/Footer.png") no-repeat;
+
+  padding: 53px 0 46px 0;
+
+  & .section-title{
+    color: $white;
+    margin:  0 0 40px 0;
+  }
+
+  & .footer-container{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  & .footer-contact{
+    margin-right: 160px;
+  }
+
+  & a{
+    color: $beige;
+    display: inline-block;
+  }
+
+  & span{
+    font-family:"Georgia W05 Regular5162277";
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    font-style: normal;
+  }
+
+  & .footer-contact-list li:first-child{
+    margin-bottom: 40px;
+  }
+
+  & .footer-address-list li:first-child{
+    margin-bottom: 25px;
+  }
+
+  & .footer-address .section-title{
+    margin: 0 0 35px 0;
+  }
+
+  & .footer-contact-list li a svg{
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 20px;
+  }
+
+
+
+  & .footer-address-list li a svg{
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 20px;
+  }
+}
+
+.footer-address-text{
+  display: flex;
+  align-items: center;
+}
+
+.footer-image{
+  width: 300px;
+  height: 310px;
+  border: none;
+}
+
+

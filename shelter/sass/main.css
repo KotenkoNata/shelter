@@ -392,6 +392,10 @@ img {
   margin: 0 0 25px 0;
 }
 
+svg {
+  fill: #F1CDB3;
+}
+
 .logo-title {
   color: #F1CDB3;
   font-family: "Georgia W05 Regular5162277";
@@ -483,6 +487,63 @@ button.light-button {
 
 .only-text-container {
   width: 472px;
+}
+
+footer {
+  background: url("./../assets/images/Footer.png") no-repeat;
+  padding: 53px 0 46px 0;
+}
+footer .section-title {
+  color: #FFFFFF;
+  margin: 0 0 40px 0;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .footer-contact {
+  margin-right: 160px;
+}
+footer a {
+  color: #F1CDB3;
+  display: inline-block;
+}
+footer span {
+  font-family: "Georgia W05 Regular5162277";
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  font-style: normal;
+}
+footer .footer-contact-list li:first-child {
+  margin-bottom: 40px;
+}
+footer .footer-address-list li:first-child {
+  margin-bottom: 25px;
+}
+footer .footer-address .section-title {
+  margin: 0 0 35px 0;
+}
+footer .footer-contact-list li a svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+footer .footer-address-list li a svg {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.footer-address-text {
+  display: flex;
+  align-items: center;
+}
+
+.footer-image {
+  width: 300px;
+  height: 310px;
+  border: none;
 }
 
 #about {
@@ -598,7 +659,7 @@ button.light-button {
 #donation {
   background-color: #F6F6F6;
   color: #545454;
-  padding: 80px 0 110px 0;
+  padding: 80px 0 100px 0;
 }
 #donation .section-title {
   text-align: left;
