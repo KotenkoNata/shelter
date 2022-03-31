@@ -6,6 +6,10 @@
     & a{
       line-height: 160%;
       color: $grey;
+
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
 }
@@ -35,6 +39,10 @@
       margin-left: 36px;
       & a{
         color: $dark-grey;
+
+        &:hover{
+          cursor: pointer;
+        }
       }
     }
   }

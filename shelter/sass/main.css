@@ -447,6 +447,9 @@ button.light-button {
   line-height: 160%;
   color: #CDCDCD;
 }
+.navigation-list li a:hover {
+  cursor: pointer;
+}
 
 .current {
   position: relative;
@@ -468,6 +471,9 @@ button.light-button {
 }
 .pets-header .navigation-list li a {
   color: #545454;
+}
+.pets-header .navigation-list li a:hover {
+  cursor: pointer;
 }
 
 .pets-header {
