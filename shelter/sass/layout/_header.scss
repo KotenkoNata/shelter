@@ -1,3 +1,12 @@
+.pets-header{
+  background-color: $white;
+
+  & .header-container{
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
 .header-container{
   display: flex;
   align-items: center;
@@ -6,5 +15,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+}
+
+.main{
   background: url("./../assets/images/startScreen.png") no-repeat center 0;
 }
+

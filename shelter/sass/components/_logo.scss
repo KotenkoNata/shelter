@@ -13,3 +13,15 @@
   letter-spacing: 0.1em;
   margin: 10px 0 0 0;
 }
+
+.pets-header{
+
+  & .logo-title{
+    color: $dark-grey;
+  }
+
+  & .logo-text{
+    margin: 12px 0 0 4px;
+    color: $black;
+  }
+}

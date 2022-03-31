@@ -10,7 +10,7 @@
   }
 }
 
-.header-nav-link{
+.current{
   position: relative;
 
   &::after{
@@ -26,5 +26,16 @@
     height: 4px;
     background-color: $beige;
     border-radius: 2px;
+  }
+}
+
+.pets-header{
+  .navigation-list{
+    & li{
+      margin-left: 36px;
+      & a{
+        color: $dark-grey;
+      }
+    }
   }
 }
