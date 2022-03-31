@@ -434,7 +434,24 @@ button {
 button.light-button {
   background-color: #FFFFFF;
   border: 2px solid #F1CDB3;
-  padding: 11px 41px;
+  padding: 12px 41px;
+}
+
+.button {
+  border-radius: 100px;
+  padding: 15px 45px;
+  background-color: #F1CDB3;
+  font-family: "Georgia W05 Regular5162277";
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #F1CDB3;
+  color: #FFFFFF;
 }
 
 .navigation-list {

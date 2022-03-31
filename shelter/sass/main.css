@@ -434,7 +434,24 @@ button {
 button.light-button {
   background-color: #FFFFFF;
   border: 2px solid #F1CDB3;
-  padding: 11px 41px;
+  padding: 12px 41px;
+}
+
+.button {
+  border-radius: 100px;
+  padding: 15px 45px;
+  background-color: #F1CDB3;
+  font-family: "Georgia W05 Regular5162277";
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #F1CDB3;
+  color: #FFFFFF;
 }
 
 .navigation-list {
@@ -598,7 +615,7 @@ footer .footer-address-list li a svg {
 
 #friends {
   background-color: #F6F6F6;
-  padding: 80px 0 100px 0;
+  padding: 80px 0 110px 0;
 }
 #friends .section-title {
   text-align: center;
@@ -608,11 +625,18 @@ footer .footer-address-list li a svg {
 .button-container {
   text-align: center;
 }
+.button-container .button {
+  padding: 17px 45px;
+}
+.button-container .button:hover {
+  color: #292929;
+}
 
 .friend-list {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 77px;
 }
 .friend-list li {
   background-color: #FAFAFA;
@@ -627,6 +651,9 @@ footer .footer-address-list li a svg {
 }
 .friend-list li:nth-child(5) {
   margin: 0;
+}
+.friend-list li:hover {
+  cursor: pointer;
 }
 .friend-list li.arrow-item {
   background-color: transparent;
@@ -648,6 +675,13 @@ footer .footer-address-list li a svg {
   border: 2px solid #F1CDB3;
   padding: 13px 17px;
   margin: 0;
+}
+.friend-list li button.arrow .arrow-left, .friend-list li button.arrow .arrow-right {
+  fill: #292929;
+}
+.friend-list li button.arrow:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
 }
 
 .friend-center-button {
@@ -724,6 +758,10 @@ footer .footer-address-list li a svg {
 }
 .donation-card-link svg {
   margin-left: 1px;
+  fill: #292929;
+}
+.donation-card-link:hover {
+  cursor: pointer;
 }
 
 .flex {

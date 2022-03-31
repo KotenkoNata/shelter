@@ -1,7 +1,7 @@
 #friends{
   background-color: $light-grey;
 
-  padding: 80px 0 100px 0;
+  padding: 80px 0 110px 0;
 
   & .section-title{
     text-align: center;
@@ -11,12 +11,22 @@
 
 .button-container{
     text-align: center;
+
+  & .button{
+    padding: 17px 45px;
+  }
+
+  & .button:hover{
+    color: $black;
+  }
 }
 
 .friend-list{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 77px;
 
   & li{
     background-color: $grey-white;
@@ -36,6 +46,9 @@
       margin: 0;
     }
 
+    &:hover{
+      cursor: pointer;
+    }
 
     &.arrow-item{
       background-color: transparent;
@@ -60,6 +73,15 @@
         border: 2px solid $beige;
         padding: 13px 17px;
         margin: 0;
+
+        .arrow-left, .arrow-right{
+          fill: $black;
+        }
+
+        &:hover{
+          cursor: pointer;
+          background-color: $beige;
+        }
       }
     }
 
