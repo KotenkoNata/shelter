@@ -474,8 +474,7 @@ button.light-button {
   background-color: #FFFFFF;
 }
 .pets-header .header-container {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  padding: 30px 0;
 }
 
 .header-container {

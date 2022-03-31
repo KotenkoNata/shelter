@@ -1,0 +1,109 @@
+#friends{
+
+  background-color: $light-grey;
+
+  padding: 80px 0 100px 0;
+
+  & .section-title{
+    text-align: center;
+
+    margin: 0 0 55px 0;
+  }
+
+  & .pets-friends-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    width: calc(100% - 120px) / 4;
+
+
+
+
+    & li{
+      background-color: $grey-white;
+      border-radius: 9px;
+
+      text-align: center;
+      margin: 0 40px 30px 0;
+
+      &:nth-child(4){
+        margin-right: 0;
+      }
+
+      &:nth-child(8){
+        margin-right: 0;
+      }
+
+      & p{
+        margin: 32px 0;
+
+        font-family:"Georgia W05 Regular5162277";
+        font-style: normal;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+      }
+
+      & button{
+        margin-bottom: 30px;
+      }
+    }
+
+
+  }
+
+}
+
+.pets-list-control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 32px;
+
+  & li{
+    margin-right: 20px;
+
+    &:nth-child(5){
+      margin: 0;
+    }
+  }
+
+  & li button{
+    border: 2px solid $grey;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 115%;
+
+  }
+
+  & li .first, .fifth{
+    padding: 12px 10px;
+  }
+
+  & li .first, .second{
+    color: $grey;
+  }
+
+  & li .fourth, .fifth{
+    border-color: $beige;
+  }
+
+  & li .second, .fourth{
+    padding: 12px 17px;
+  }
+
+  & li .third{
+    padding: 12px 19px;
+
+    border-color: $beige;
+    background-color: $beige;
+  }
+}
