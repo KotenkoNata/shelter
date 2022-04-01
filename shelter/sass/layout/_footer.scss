@@ -1,7 +1,8 @@
-footer{
+.footer-main-container{
   background: url("./../assets/images/Footer.png") no-repeat;
 
-  padding: 53px 0 46px 0;
+  padding-top: 53px;
+  padding-bottom: 46px;
 
   & .section-title{
     color: $white;

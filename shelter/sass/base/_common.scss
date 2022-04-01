@@ -1,3 +1,9 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   color: $dark;
   background-color: $white;
@@ -25,12 +31,25 @@ a{
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
   margin: 0 auto;
-  width: 1200px;
-  padding: 0 40px;
+
+  @include for-size(phone) {
+    max-width: $phone-width;
+    padding: 0 10px;
+  }
+  @include for-size(tablet) {
+    max-width: $tablet-width;
+    padding: 0 30px;
+  }
+  @include for-size(desktop) {
+    max-width: $desktop-width;
+    padding: 0 40px;
+  }
 }
 
 .section-title{
