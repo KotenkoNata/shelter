@@ -50,6 +50,15 @@
       & button{
         margin-bottom: 30px;
       }
+
+      &:hover{
+        cursor: pointer;
+
+        & button{
+          cursor: pointer;
+          background-color: $beige;
+        }
+      }
     }
 
 
@@ -82,6 +91,10 @@
     font-size: 20px;
     line-height: 115%;
 
+    &:hover{
+      cursor: pointer;
+    }
+
   }
 
   & li .first, .fifth{
@@ -106,4 +119,6 @@
     border-color: $beige;
     background-color: $beige;
   }
+
+
 }

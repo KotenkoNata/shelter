@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../../sass/pets.css">
 </head>
 <body>
-<header class="pets-header">
+<header id="petsHeader" class="pets-header">
     <div class="header-container container">
         <div class="logo-container">
             <h1 class="logo-title">Cozy House</h1>
@@ -18,14 +18,14 @@
             <ul class="navigation-list">
                 <li><a href="./../main/index.html">About the shelter</a></li>
                 <li class="current"><a href="">Our pets</a></li>
-                <li><a href="">Help the shelter</a></li>
-                <li><a href="">Contacts</a></li>
+                <li><a href="./../main/index.html#help">Help the shelter</a></li>
+                <li><a href="#footer">Contacts</a></li>
             </ul>
         </nav>
 
     </div>
 </header>
-<main>
+<main class="content">
     <section id="friends">
         <div class="container">
         <h2 class="section-title">Our friends who<br> are looking for a house</h2>
@@ -89,12 +89,12 @@
         </ul>
             <ul class="pets-list-control">
                 <li>
-                    <button class="first">
+                    <button class="first" disabled>
                         <<
                     </button>
                 </li>
                 <li>
-                    <button class="second">
+                    <button class="second" disabled>
                         <
                     </button>
                 </li>
@@ -117,7 +117,7 @@
         </div>
     </section>
 </main>
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="footer-container">
             <div class="footer-contact">
@@ -170,5 +170,6 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

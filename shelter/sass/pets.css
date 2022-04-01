@@ -500,6 +500,16 @@ button.light-button {
   padding: 30px 0;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 119px;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -550,6 +560,13 @@ button.light-button {
 #friends .pets-friends-list li button {
   margin-bottom: 30px;
 }
+#friends .pets-friends-list li:hover {
+  cursor: pointer;
+}
+#friends .pets-friends-list li:hover button {
+  cursor: pointer;
+  background-color: #F1CDB3;
+}
 
 .pets-list-control {
   display: flex;
@@ -571,6 +588,9 @@ button.light-button {
   padding: 0;
   font-size: 20px;
   line-height: 115%;
+}
+.pets-list-control li button:hover {
+  cursor: pointer;
 }
 .pets-list-control li .first, .pets-list-control .fifth {
   padding: 12px 10px;

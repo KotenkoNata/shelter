@@ -6,6 +6,16 @@
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 119px;
+}
+
 .header-container{
   display: flex;
   align-items: center;
