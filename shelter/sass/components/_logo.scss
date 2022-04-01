@@ -25,3 +25,9 @@
     color: $black;
   }
 }
+
+@include for-size(tablet){
+  .logo-text{
+    margin: 10px 0 0 4px;
+  }
+}

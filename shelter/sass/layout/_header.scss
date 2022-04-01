@@ -21,12 +21,36 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include for-size(tablet){
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
+  @include for-size(desktop){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .main{
-  background: url("./../assets/images/startScreen.png") no-repeat center 0;
+  background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center 0;
+}
+
+@include for-size(phone){
+  .main{
+    background: url("./../assets/images/phone/herophone.jpeg") no-repeat center 0;
+  }
+}
+
+@include for-size(tablet){
+  .main{
+    background: url("./../assets/images/tablet/herotablet.jpeg") no-repeat center 0;
+  }
+}
+
+@include for-size(desktop){
+  .main{
+    background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center 0;
+  }
 }
 

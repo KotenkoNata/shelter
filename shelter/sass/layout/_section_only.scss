@@ -1,6 +1,5 @@
 #Only{
   background: url("./../assets/images/startScreen.png") no-repeat center -180px;
-  height: 728px;
 
   & h2{
     color: $white;
@@ -17,11 +16,41 @@
 }
 
 .only-head-container{
-  padding-top: 163px;
   width: 400px;
 }
 
 .only-text-container{
   width: 472px;
+}
+
+@include for-size(tablet){
+  #Only {
+    background: url("./../assets/images/tablet/herotablet.jpeg") no-repeat center -120px;
+    height: 1045px;
+
+    padding: 30px 0 0 0;
+
+    & .only-head-container{
+      margin-left: 124px;
+    }
+
+    & .only-text-container{
+      margin-left: 124px;
+
+      & .button{
+        margin-left: 126px;
+      }
+    }
+  }
+}
+
+@include for-size(desktop){
+  #Only {
+    height: 728px;
+
+    & .only-head-container{
+      padding-top: 163px;
+    }
+  }
 }
 
