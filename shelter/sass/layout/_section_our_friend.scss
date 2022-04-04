@@ -48,6 +48,11 @@
 
     &:hover{
       cursor: pointer;
+
+      & button{
+        cursor: pointer;
+        background-color: $beige;
+      }
     }
 
     &.arrow-item{

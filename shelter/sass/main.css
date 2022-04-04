@@ -665,6 +665,10 @@ footer .footer-address-list li a svg {
 .friend-list li:hover {
   cursor: pointer;
 }
+.friend-list li:hover button {
+  cursor: pointer;
+  background-color: #F1CDB3;
+}
 .friend-list li.arrow-item {
   background-color: transparent;
 }
