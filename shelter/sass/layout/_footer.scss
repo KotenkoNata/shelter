@@ -6,7 +6,7 @@
 
   & .section-title{
     color: $white;
-    margin:  0 0 40px 0;
+    margin:  0 0 42px 0;
   }
 
   & .footer-container{
@@ -21,10 +21,11 @@
   & a{
     color: $beige;
     display: inline-block;
+    align-items: normal;
   }
 
   & span{
-    font-family:"Georgia W05 Regular5162277";
+    font-family:"Georgia W05 Regular5162277", sans-serif;
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
@@ -36,7 +37,7 @@
   }
 
   & .footer-address-list li:first-child{
-    margin-bottom: 25px;
+    margin-bottom: 36px;
   }
 
   & .footer-address .section-title{
@@ -47,7 +48,7 @@
     display: inline-block;
     vertical-align: middle;
 
-    margin-right: 20px;
+    margin-right: 17px;
   }
 
 
@@ -56,13 +57,20 @@
     display: inline-block;
     vertical-align: middle;
 
-    margin-right: 20px;
+    margin: -3px 18px 0 0;
   }
 }
 
 .footer-address-text{
   display: flex;
   align-items: center;
+
+  & .footer-text{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 300px;
+  }
 }
 
 .footer-image{
@@ -70,5 +78,4 @@
   height: 310px;
   border: none;
 }
-
 

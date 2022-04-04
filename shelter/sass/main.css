@@ -356,7 +356,7 @@ body {
 body {
   color: #4C4C4C;
   background-color: #FFFFFF;
-  font-family: "Arial MT W01 Regular";
+  font-family: "Arial MT W01 Regular", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
@@ -407,7 +407,7 @@ img {
 }
 
 .section-title {
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -454,7 +454,7 @@ button {
   border-radius: 100px;
   padding: 15px 45px;
   background-color: #F1CDB3;
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", serif;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -470,7 +470,7 @@ button.light-button {
   border-radius: 100px;
   padding: 15px 45px;
   background-color: #F1CDB3;
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", serif;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
@@ -630,7 +630,7 @@ button.light-button {
 }
 .footer-main-container .section-title {
   color: #FFFFFF;
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
 }
 .footer-main-container .footer-container {
   display: flex;
@@ -642,9 +642,10 @@ button.light-button {
 .footer-main-container a {
   color: #F1CDB3;
   display: inline-block;
+  align-items: normal;
 }
 .footer-main-container span {
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", sans-serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -654,7 +655,7 @@ button.light-button {
   margin-bottom: 43px;
 }
 .footer-main-container .footer-address-list li:first-child {
-  margin-bottom: 25px;
+  margin-bottom: 36px;
 }
 .footer-main-container .footer-address .section-title {
   margin: 0 0 35px 0;
@@ -662,17 +663,23 @@ button.light-button {
 .footer-main-container .footer-contact-list li a svg {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: 17px;
 }
 .footer-main-container .footer-address-list li a svg {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+  margin: -3px 18px 0 0;
 }
 
 .footer-address-text {
   display: flex;
   align-items: center;
+}
+.footer-address-text .footer-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 300px;
 }
 
 .footer-image {
@@ -747,7 +754,7 @@ button.light-button {
 }
 .friend-list li p {
   margin: 30px 0;
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", serif;
   font-style: normal;
   font-size: 20px;
   line-height: 23px;
@@ -800,7 +807,7 @@ button.light-button {
   margin-right: 0;
 }
 #help ul li p {
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", serif;
   font-style: normal;
   font-size: 20px;
   line-height: 115%;
@@ -858,7 +865,7 @@ button.light-button {
 }
 
 .donation-italic-text {
-  font-family: "Arial MT W01 Regular";
+  font-family: "Arial MT W01 Regular", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
