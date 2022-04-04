@@ -91,3 +91,42 @@
 .friend-center-button{
   margin: 60px 0 0 0;
 }
+
+@include for-size(tablet){
+  #friends{
+    & .section-title{
+      margin: 0 0 58px 0;
+    }
+
+    .button-container {
+
+      & .button {
+        padding: 16px 44px;
+      }
+    }
+  }
+
+
+  .friend-list{
+
+    margin-bottom: 75px;
+
+    & li{
+      margin-right: 40px;
+
+      &:nth-child(1){
+        margin-right: 12px;
+      }
+
+      &:nth-child(3){
+        margin-right: 12px;
+      }
+    }
+
+    & li:nth-child(4){
+      display: none;
+    }
+
+
+  }
+}
