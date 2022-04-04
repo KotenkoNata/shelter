@@ -1,7 +1,7 @@
 body {
   color: $dark;
   background-color: $white;
-  font-family: "Arial MT W01 Regular";
+  font-family: $arial;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
@@ -34,7 +34,7 @@ img {
 }
 
 .section-title{
-  font-family:"Georgia W05 Regular5162277";
+  font-family: $georgia;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
