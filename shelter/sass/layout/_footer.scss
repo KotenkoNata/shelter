@@ -1,7 +1,8 @@
-footer{
+.footer-main-container{
   background: url("./../assets/images/Footer.png") no-repeat;
 
-  padding: 53px 0 46px 0;
+  padding-top: 53px;
+  padding-bottom: 46px;
 
   & .section-title{
     color: $white;
@@ -23,7 +24,7 @@ footer{
   }
 
   & span{
-    font-family:"Georgia W05 Regular5162277";
+    font-family:"Georgia W05 Regular5162277", sans-serif;
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
@@ -69,5 +70,3 @@ footer{
   height: 310px;
   border: none;
 }
-
-

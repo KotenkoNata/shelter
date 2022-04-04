@@ -547,47 +547,48 @@ button.light-button {
   width: 472px;
 }
 
-footer {
+.footer-main-container {
   background: url("./../assets/images/Footer.png") no-repeat;
-  padding: 53px 0 46px 0;
+  padding-top: 53px;
+  padding-bottom: 46px;
 }
-footer .section-title {
+.footer-main-container .section-title {
   color: #FFFFFF;
   margin: 0 0 40px 0;
 }
-footer .footer-container {
+.footer-main-container .footer-container {
   display: flex;
   justify-content: flex-start;
 }
-footer .footer-contact {
+.footer-main-container .footer-contact {
   margin-right: 160px;
 }
-footer a {
+.footer-main-container a {
   color: #F1CDB3;
   display: inline-block;
 }
-footer span {
-  font-family: "Georgia W05 Regular5162277";
+.footer-main-container span {
+  font-family: "Georgia W05 Regular5162277", sans-serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
   font-style: normal;
 }
-footer .footer-contact-list li:first-child {
+.footer-main-container .footer-contact-list li:first-child {
   margin-bottom: 43px;
 }
-footer .footer-address-list li:first-child {
+.footer-main-container .footer-address-list li:first-child {
   margin-bottom: 25px;
 }
-footer .footer-address .section-title {
+.footer-main-container .footer-address .section-title {
   margin: 0 0 35px 0;
 }
-footer .footer-contact-list li a svg {
+.footer-main-container .footer-contact-list li a svg {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
 }
-footer .footer-address-list li a svg {
+.footer-main-container .footer-address-list li a svg {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
