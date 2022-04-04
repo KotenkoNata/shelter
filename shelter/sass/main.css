@@ -422,7 +422,7 @@ svg {
 
 .logo-title {
   color: #F1CDB3;
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", serif;
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -577,11 +577,11 @@ button.light-button {
   }
 }
 #Only {
-  background: url("./../assets/images/startScreen.png") no-repeat center -180px;
+  background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center -180px;
 }
 #Only h2 {
   color: #FFFFFF;
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", serif;
   font-size: 44px;
   line-height: 130%;
   margin: 0 0 42px 0;
