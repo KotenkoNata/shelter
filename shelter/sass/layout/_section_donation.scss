@@ -7,18 +7,18 @@
 
   & .section-title{
     text-align: left;
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0;
   }
 
   & .donation-image-container{
-margin-right: 30px;
+    margin-right: 30px;
   }
 
   & .donation-text-container{
     width: 380px;
 
     & .donation-bank{
-      font-family:"Georgia W05 Regular5162277";
+      font-family:"Georgia W05 Regular5162277", sans-serif;
       line-height: 110%;
       letter-spacing: 0.06em;
       margin: 0 0 20px 0;
@@ -37,7 +37,7 @@ margin-right: 30px;
   & span{
     margin-left: 15px;
 
-    font-family:"Georgia W05 Regular5162277";
+    font-family:"Georgia W05 Regular5162277", sans-serif;
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
@@ -60,7 +60,7 @@ margin-right: 30px;
 }
 
 .donation-italic-text{
-  font-family:"Arial MT W01 Regular";
+  font-family:"Arial MT W01 Regular", sans serif;
   font-style: italic;
   font-weight: 400;
   font-size: 12px;

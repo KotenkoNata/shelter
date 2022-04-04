@@ -398,7 +398,7 @@ svg {
 
 .logo-title {
   color: #F1CDB3;
-  font-family: "Georgia W05 Regular5162277";
+  font-family: "Georgia W05 Regular5162277", sans-serif;
   font-size: 32px;
   line-height: 110%;
   letter-spacing: 0.06em;
@@ -409,7 +409,7 @@ svg {
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 4px;
 }
 
 .pets-header .logo-title {
@@ -458,7 +458,7 @@ button.light-button {
   display: flex;
 }
 .navigation-list li {
-  margin-left: 35px;
+  margin-left: 36px;
 }
 .navigation-list li a {
   line-height: 160%;
@@ -617,7 +617,7 @@ button.light-button {
 }
 .footer-main-container .section-title {
   color: #FFFFFF;
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
 }
 .footer-main-container .footer-container {
   display: flex;
@@ -629,6 +629,7 @@ button.light-button {
 .footer-main-container a {
   color: #F1CDB3;
   display: inline-block;
+  align-items: normal;
 }
 .footer-main-container span {
   font-family: "Georgia W05 Regular5162277", sans-serif;
@@ -641,7 +642,7 @@ button.light-button {
   margin-bottom: 43px;
 }
 .footer-main-container .footer-address-list li:first-child {
-  margin-bottom: 25px;
+  margin-bottom: 36px;
 }
 .footer-main-container .footer-address .section-title {
   margin: 0 0 35px 0;
@@ -649,17 +650,23 @@ button.light-button {
 .footer-main-container .footer-contact-list li a svg {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+  margin-right: 17px;
 }
 .footer-main-container .footer-address-list li a svg {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20px;
+  margin: -3px 18px 0 0;
 }
 
 .footer-address-text {
   display: flex;
   align-items: center;
+}
+.footer-address-text .footer-text {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 300px;
 }
 
 .footer-image {
