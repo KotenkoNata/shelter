@@ -625,8 +625,17 @@ button.light-button {
 }
 .footer-main-container {
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  padding-top: 53px;
-  padding-bottom: 46px;
+}
+@media (min-width: 1280px) {
+  .footer-main-container {
+    padding-bottom: 46px;
+    padding-top: 53px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-main-container {
+    padding: 30px 30px 0 30px;
+  }
 }
 .footer-main-container .section-title {
   color: #FFFFFF;
@@ -636,8 +645,26 @@ button.light-button {
   display: flex;
   justify-content: flex-start;
 }
-.footer-main-container .footer-contact {
-  margin-right: 160px;
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-main-container .footer-container {
+    padding: 0 34px;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-main-container .footer-contact {
+    margin-right: 160px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-main-container .footer-contact {
+    width: calc((100% - 60px) / 2);
+    margin-right: 49px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-main-container .footer-address {
+    width: calc((100% - 60px) / 2);
+  }
 }
 .footer-main-container a {
   color: #F1CDB3;
@@ -645,7 +672,7 @@ button.light-button {
   align-items: normal;
 }
 .footer-main-container span {
-  font-family: "Georgia W05 Regular5162277", sans-serif;
+  font-family: "Georgia W05 Regular5162277", serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
@@ -682,10 +709,12 @@ button.light-button {
   width: 300px;
 }
 
-.footer-image {
-  width: 300px;
-  height: 310px;
-  border: none;
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
 }
 
 #about {
