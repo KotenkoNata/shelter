@@ -354,12 +354,12 @@ body {
 }
 
 body {
-  color: #4C4C4C;
-  background-color: #FFFFFF;
   font-family: "Arial MT W01 Regular", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
+  color: #4C4C4C;
+  background-color: #FFFFFF;
 }
 
 ul {
@@ -463,7 +463,7 @@ button {
 button.light-button {
   background-color: #FFFFFF;
   border: 2px solid #F1CDB3;
-  padding: 13px 42px;
+  padding: 12px 41px;
 }
 
 .button {
