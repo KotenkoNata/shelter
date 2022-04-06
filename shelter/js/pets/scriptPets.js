@@ -4,7 +4,7 @@ let header = document.getElementById("petsHeader");
 let sticky = header.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
+  if (window.scrollY >= sticky) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
