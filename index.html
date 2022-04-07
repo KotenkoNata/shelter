@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="shelter/sass/main.css">
 </head>
 <body>
+<div class="wrapper">
 <header>
     <div class="header-container main container">
 
@@ -15,13 +16,17 @@
             <p class="logo-text">Shelter for pets in Boston</p>
         </div>
 
+        <div class="menu-icon">
+            <span></span>
+        </div>
 
-    <nav>
+
+    <nav class="menu-body">
         <ul class="navigation-list">
-            <li class="current"><a href="/">About the shelter</a></li>
-            <li><a href="pets.html">Our pets</a></li>
-            <li><a href="#help">Help the shelter</a></li>
-            <li><a href="#footer">Contacts</a></li>
+            <li class="current navigation-item"><a href="/">About the shelter</a></li>
+            <li><a class="navigation-item" href="pets.html">Our pets</a></li>
+            <li><a class="navigation-item" href="#help">Help the shelter</a></li>
+            <li><a class="navigation-item" href="#footer">Contacts</a></li>
         </ul>
     </nav>
 
@@ -299,6 +304,7 @@
         </div>
     </footer>
 </div>
-
+</div>
+<script src="shelter/pages/main/script.js"></script>
 </body>
 </html>
