@@ -31,7 +31,6 @@
   & li{
     background-color: $grey-white;
     text-align: center;
-
     margin-right: 90px;
 
     &:nth-child(1){
@@ -97,18 +96,14 @@
     & .section-title{
       margin: 0 0 58px 0;
     }
-
     .button-container {
-
       & .button {
         padding: 16px 44px;
       }
     }
   }
 
-
   .friend-list{
-
     margin-bottom: 75px;
 
     & li{

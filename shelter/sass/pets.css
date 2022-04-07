@@ -471,6 +471,11 @@ button.light-button {
   border: 2px solid #F1CDB3;
   padding: 12px 41px;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  button.light-button {
+    padding: 13px 43px;
+  }
+}
 
 .button {
   border-radius: 100px;
@@ -592,16 +597,33 @@ button.light-button {
   background-color: #F6F6F6;
   padding: 80px 0 100px 0;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  #friends {
+    padding: 80px 0 76px 0;
+  }
+}
 #friends .section-title {
   text-align: center;
   margin: 0 0 55px 0;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  #friends .section-title {
+    margin: 0 0 30px 0;
+  }
+}
 #friends .pets-friends-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  width: calc(100% - 120px)/4;
+}
+@media (min-width: 1280px) {
+  #friends .pets-friends-list {
+    width: calc(100% - 120px)/4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  #friends .pets-friends-list {
+    padding: 0 64px;
+  }
 }
 #friends .pets-friends-list li {
   background-color: #FAFAFA;
@@ -609,11 +631,27 @@ button.light-button {
   text-align: center;
   margin: 0 40px 30px 0;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  #friends .pets-friends-list li {
+    width: calc((100% - 40px) / 2);
+  }
+}
 #friends .pets-friends-list li:nth-child(4) {
   margin-right: 0;
 }
 #friends .pets-friends-list li:nth-child(8) {
   margin-right: 0;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  #friends .pets-friends-list li:nth-child(2n) {
+    margin-right: 0;
+  }
+  #friends .pets-friends-list li:nth-child(7) {
+    display: none;
+  }
+  #friends .pets-friends-list li:nth-child(8) {
+    display: none;
+  }
 }
 #friends .pets-friends-list li p {
   margin: 32px 0;
@@ -622,6 +660,11 @@ button.light-button {
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.06em;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  #friends .pets-friends-list li p {
+    margin: 30px 0;
+  }
 }
 #friends .pets-friends-list li button {
   margin-bottom: 30px;
@@ -639,6 +682,11 @@ button.light-button {
   justify-content: center;
   align-items: center;
   margin-top: 32px;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .pets-list-control {
+    margin-top: 10px;
+  }
 }
 .pets-list-control li {
   margin-right: 20px;

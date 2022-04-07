@@ -14,6 +14,10 @@ button{
     background-color: $white;
     border: 2px solid $beige;
     padding: 12px 41px;
+
+    @include for-size(tablet){
+      padding: 13px 43px;
+    }
   }
 }
 
