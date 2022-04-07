@@ -23,6 +23,10 @@
   & .logo-text{
     margin: 12px 0 0 4px;
     color: $black;
+
+    @include for-size(tablet){
+      margin: 12px 0 0 4px;
+    }
   }
 }
 

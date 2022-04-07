@@ -45,7 +45,8 @@ img {
   }
   @include for-size(tablet) {
     max-width: $tablet-width;
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   @include for-size(desktop) {
     max-width: $desktop-width;
