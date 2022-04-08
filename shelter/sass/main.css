@@ -717,6 +717,7 @@ button.light-button {
 @media (max-width: 767px) {
   #Only p {
     text-align: center;
+    margin: 0 0 40px 0;
   }
 }
 
@@ -732,7 +733,7 @@ button.light-button {
   .only-head-container {
     max-width: 200px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 58px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {

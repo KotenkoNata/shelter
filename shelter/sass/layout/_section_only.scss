@@ -37,6 +37,7 @@
 
     @include for-size(phone){
       text-align: center;
+      margin: 0 0 40px 0;
     }
   }
 }
@@ -51,7 +52,7 @@
   @include for-size(phone){
     max-width: 200px;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 58px;
   }
 
   @include for-size(tablet){
