@@ -443,6 +443,16 @@ svg {
   letter-spacing: 0.1em;
   margin: 10px 0 0 0;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .logo-text {
+    margin: 10px 0 0 4px;
+  }
+}
+@media (max-width: 767px) {
+  .logo-text {
+    margin: 12px 0 0 4px;
+  }
+}
 
 .pets-header .logo-title {
   color: #545454;
@@ -457,11 +467,6 @@ svg {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
-  .logo-text {
-    margin: 10px 0 0 4px;
-  }
-}
 button {
   border: none;
   border-radius: 100px;

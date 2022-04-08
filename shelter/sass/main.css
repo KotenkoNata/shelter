@@ -447,6 +447,7 @@ body.lock {
     width: 30px;
     height: 22px;
     cursor: pointer;
+    margin-right: 43px;
   }
   .menu-icon::after, .menu-icon::before, .menu-icon span {
     left: 0;
@@ -509,6 +510,16 @@ body.lock {
   letter-spacing: 0.1em;
   margin: 10px 0 0 0;
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .logo-text {
+    margin: 10px 0 0 4px;
+  }
+}
+@media (max-width: 767px) {
+  .logo-text {
+    margin: 12px 0 0 4px;
+  }
+}
 
 .pets-header .logo-title {
   color: #545454;
@@ -523,11 +534,6 @@ body.lock {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
-  .logo-text {
-    margin: 10px 0 0 4px;
-  }
-}
 button {
   border: none;
   border-radius: 100px;

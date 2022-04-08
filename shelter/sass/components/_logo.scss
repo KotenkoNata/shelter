@@ -12,6 +12,14 @@
   line-height: 15px;
   letter-spacing: 0.1em;
   margin: 10px 0 0 0;
+
+  @include for-size(tablet){
+    margin: 10px 0 0 4px;
+  }
+
+  @include for-size(phone){
+    margin: 12px 0 0 4px;
+  }
 }
 
 .pets-header{
@@ -30,8 +38,4 @@
   }
 }
 
-@include for-size(tablet){
-  .logo-text{
-    margin: 10px 0 0 4px;
-  }
-}
+
