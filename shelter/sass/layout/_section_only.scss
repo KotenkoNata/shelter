@@ -13,7 +13,7 @@
 
   @include for-size(phone){
     background: url('./../assets/images/phone/herophone.jpeg') no-repeat center -90px;
-    height: 733px;
+    height: 731px;
   }
 
 
@@ -38,6 +38,7 @@
     @include for-size(phone){
       text-align: center;
       margin: 0 0 40px 0;
+
     }
   }
 }

@@ -693,7 +693,7 @@ button.light-button {
 @media (max-width: 767px) {
   #Only {
     background: url("./../assets/images/phone/herophone.jpeg") no-repeat center -90px;
-    height: 733px;
+    height: 731px;
   }
 }
 #Only h2 {
@@ -861,7 +861,7 @@ button.light-button {
 }
 @media (max-width: 767px) {
   #about {
-    padding: 42px 0 42px 0;
+    padding: 42px 0 40px 0;
     width: 100%;
   }
 }
@@ -899,8 +899,14 @@ button.light-button {
 #about .first {
   margin-bottom: 25px;
 }
+@media (max-width: 767px) {
+  #about .first {
+    margin-bottom: 22px;
+  }
+}
 #about p {
   margin: 0;
+  text-align: justify;
 }
 
 #friends {
@@ -909,7 +915,7 @@ button.light-button {
 }
 @media (max-width: 767px) {
   #friends {
-    padding: 42px 0 59px 0;
+    padding: 42px 0 54px 0;
   }
 }
 #friends .section-title {
@@ -941,7 +947,7 @@ button.light-button {
 @media (max-width: 767px) {
   .friend-list {
     position: relative;
-    margin-bottom: 124px;
+    margin-bottom: 129px;
   }
 }
 .friend-list li {
@@ -972,7 +978,7 @@ button.light-button {
   .friend-list li.arrow-item {
     display: flex;
     position: absolute;
-    bottom: -70px;
+    bottom: -72px;
   }
   .friend-list li.arrow-item:first-child {
     left: 58px;

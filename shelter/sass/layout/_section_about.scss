@@ -5,7 +5,7 @@
   width: 60%;
 
   @include for-size(phone){
-    padding: 42px 0 42px 0;
+    padding: 42px 0 40px 0;
     width: 100%;
   }
 
@@ -41,10 +41,15 @@
 
   & .first{
     margin-bottom: 25px;
+
+    @include for-size(phone){
+      margin-bottom: 22px;
+    }
   }
 
   & p{
     margin: 0;
+    text-align: justify;
   }
 }
 
