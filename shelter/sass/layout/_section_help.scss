@@ -5,10 +5,21 @@
     padding: 80px 39px 45px 39px;
   }
 
-  & .section-title{
-    text-align: center;
-    margin-bottom: 60px;
+  @include for-size(phone){
+    padding: 42px 5px 42px 5px;
   }
+
+  & .help-title-container{
+
+    @include for-size(desktop){
+      margin-bottom: 60px;
+    }
+    @include for-size(phone){
+      margin: 0 auto 42px auto;
+      max-width: 250px;
+    }
+  }
+
 
   & ul{
     display: flex;
@@ -16,9 +27,20 @@
     align-items: center;
     flex-wrap: wrap;
 
+    @include for-size(phone){
+      justify-content: flex-start;
+    }
+
 
     & li{
       text-align: center;
+
+      & svg{
+        @include for-size(phone){
+          width: 50px;
+          height: 50px;
+        }
+      }
 
       & p{
         font-family:$georgia;
@@ -28,6 +50,26 @@
         letter-spacing: 0.06em;
 
         margin: 22px 0 0 0;
+
+        @include for-size(phone){
+          font-size: 15px;
+          line-height: 110%;
+
+          margin: 12px 0 0 0;
+        }
+      }
+
+      @include for-size(phone){
+        margin-right: 30px;
+        margin-bottom: 30px;
+        width: calc((100% - 30px) / 2);
+
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+        &:nth-child(0){
+          margin-bottom: 0;
+        }
       }
 
       @include for-size(desktop){

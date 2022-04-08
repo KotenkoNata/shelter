@@ -1052,9 +1052,21 @@ button.light-button {
     padding: 80px 39px 45px 39px;
   }
 }
-#help .section-title {
-  text-align: center;
-  margin-bottom: 60px;
+@media (max-width: 767px) {
+  #help {
+    padding: 42px 5px 42px 5px;
+  }
+}
+@media (min-width: 1280px) {
+  #help .help-title-container {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  #help .help-title-container {
+    margin: 0 auto 42px auto;
+    max-width: 250px;
+  }
 }
 #help ul {
   display: flex;
@@ -1062,8 +1074,19 @@ button.light-button {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 767px) {
+  #help ul {
+    justify-content: flex-start;
+  }
+}
 #help ul li {
   text-align: center;
+}
+@media (max-width: 767px) {
+  #help ul li svg {
+    width: 50px;
+    height: 50px;
+  }
 }
 #help ul li p {
   font-family: "Georgia W05 Regular5162277", serif;
@@ -1072,6 +1095,26 @@ button.light-button {
   line-height: 115%;
   letter-spacing: 0.06em;
   margin: 22px 0 0 0;
+}
+@media (max-width: 767px) {
+  #help ul li p {
+    font-size: 15px;
+    line-height: 110%;
+    margin: 12px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  #help ul li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+  }
+  #help ul li:nth-child(2n) {
+    margin-right: 0;
+  }
+  #help ul li:nth-child(0) {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1280px) {
   #help ul li {
