@@ -465,28 +465,10 @@ body.lock {
   }
 }
 
-.menu-icon.active span {
-  left: 50%;
-  transform: rotate(-90deg) translate(-50%, 0px);
-}
-.menu-icon.active::before {
-  left: 0;
-  transform: rotate(-90deg);
-}
-.menu-icon.active::after {
-  right: 0;
-  transform: rotate(-90deg);
+.menu-icon.active {
+  transform: rotate(90deg);
 }
 
-.menu-body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 70px;
-  background-color: #1A1A1C;
-}
 @media (max-width: 767px) {
   .menu-body {
     position: fixed;

@@ -17,6 +17,7 @@ body.lock{
     height: 22px;
     cursor: pointer;
 
+
     &::after, &::before, & span{
       left: 0;
       position: absolute;
@@ -45,35 +46,10 @@ body.lock{
 }
 
 .menu-icon.active {
-
-  & span{
-    left: 50%;
-    transform: rotate(-90deg) translate(-50%, 0px);
-  }
-
-  &::before{
-    left: 0;
-    transform: rotate(-90deg);
-  }
-
-  &::after{
-    right: 0;
-    transform: rotate(-90deg);
-  }
-
+  transform: rotate(90deg);
 }
 
 .menu-body{
-
-  &::before{
-    content: "";
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 70px;
-    background-color: #1A1A1C;
-  }
   @include for-size(phone){
     position: fixed;
     top: 0;
