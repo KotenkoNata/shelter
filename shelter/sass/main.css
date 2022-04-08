@@ -417,6 +417,12 @@ img {
   letter-spacing: 0.06em;
   margin: 0 0 25px 0;
 }
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 25px;
+    text-align: center;
+  }
+}
 
 svg {
   fill: #F1CDB3;
@@ -682,7 +688,6 @@ button.light-button {
   #Only {
     background: url("./../assets/images/phone/herophone.jpeg") no-repeat center -90px;
     height: 733px;
-    padding-top: 60px;
   }
 }
 #Only h2 {
@@ -721,6 +726,7 @@ button.light-button {
   .only-head-container {
     max-width: 200px;
     margin: 0 auto;
+    padding-top: 60px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -846,12 +852,42 @@ button.light-button {
   margin: 0 auto;
   width: 60%;
 }
+@media (max-width: 767px) {
+  #about {
+    padding: 42px 0 42px 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 100px 0;
+  }
+}
 #about .about-text-container {
   margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  #about .about-text-container {
+    padding: 0 15px;
+    margin-bottom: 42px;
+  }
+}
+@media (min-width: 1280px) {
+  #about .about-text-container {
+    max-width: 430px;
+  }
 }
 #about .about-image-container {
   display: flex;
   justify-content: center;
+}
+@media (min-width: 1280px) {
+  #about .about-image-container {
+    margin-right: 120px;
+  }
 }
 #about .first {
   margin-bottom: 25px;
@@ -860,26 +896,6 @@ button.light-button {
   margin: 0;
 }
 
-@media (min-width: 1280px) {
-  #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0 100px 0;
-  }
-  #about .about-text-container {
-    width: 430px;
-  }
-  #about .about-image-container {
-    margin-right: 120px;
-  }
-  #about .first {
-    margin-bottom: 25px;
-  }
-  #about p {
-    margin: 0;
-  }
-}
 #friends {
   background-color: #F6F6F6;
   padding: 80px 0 110px 0;

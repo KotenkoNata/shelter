@@ -4,12 +4,39 @@
   margin: 0 auto;
   width: 60%;
 
+  @include for-size(phone){
+    padding: 42px 0 42px 0;
+    width: 100%;
+  }
+
+  @include for-size(desktop){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 0 100px 0;
+  }
+
   & .about-text-container{
     margin-bottom: 80px;
+
+    @include for-size(phone){
+      padding: 0 15px;
+
+      margin-bottom: 42px;
+    }
+
+    @include for-size(desktop){
+      max-width: 430px;
+    }
   }
   & .about-image-container{
     display: flex;
     justify-content: center;
+
+    @include for-size(desktop){
+      margin-right: 120px;
+    }
   }
 
   & .first{
@@ -18,31 +45,6 @@
 
   & p{
     margin: 0;
-  }
-}
-
-@include for-size(desktop){
-  #about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 80px 0 100px 0;
-
-    & .about-text-container{
-      width: 430px;
-    }
-    & .about-image-container{
-      margin-right: 120px;
-    }
-
-    & .first{
-      margin-bottom: 25px;
-    }
-
-    & p{
-      margin: 0;
-    }
   }
 }
 

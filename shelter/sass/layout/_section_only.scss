@@ -14,8 +14,6 @@
   @include for-size(phone){
     background: url('./../assets/images/phone/herophone.jpeg') no-repeat center -90px;
     height: 733px;
-
-    padding-top: 60px;
   }
 
 
@@ -53,6 +51,7 @@
   @include for-size(phone){
     max-width: 200px;
     margin: 0 auto;
+    padding-top: 60px;
   }
 
   @include for-size(tablet){
