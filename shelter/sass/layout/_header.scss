@@ -35,6 +35,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
+  @include for-size(phone){
+    padding-top: 30px;
+  }
 }
 
 .main{

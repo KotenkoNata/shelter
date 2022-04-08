@@ -640,6 +640,11 @@ button.light-button {
     padding-bottom: 60px;
   }
 }
+@media (max-width: 767px) {
+  .header-container {
+    padding-top: 30px;
+  }
+}
 
 .main {
   background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center 0;
@@ -660,8 +665,25 @@ button.light-button {
     background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center 0;
   }
 }
-#Only {
-  background: url("./../assets/images/noise_transparent.png"), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+@media (min-width: 1280px) {
+  #Only {
+    background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center -120px;
+    height: 728px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  #Only {
+    background: url("./../assets/images/tablet/herotablet.jpeg") no-repeat center -120px;
+    height: 1015px;
+    padding-top: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #Only {
+    background: url("./../assets/images/phone/herophone.jpeg") no-repeat center -90px;
+    height: 733px;
+    padding-top: 60px;
+  }
 }
 #Only h2 {
   color: #FFFFFF;
@@ -670,43 +692,61 @@ button.light-button {
   line-height: 130%;
   margin: 0 0 42px 0;
 }
+@media (max-width: 767px) {
+  #Only h2 {
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}
 #Only p {
   color: #CDCDCD;
   margin: 0 0 42px 0;
 }
+@media (max-width: 767px) {
+  #Only p {
+    text-align: center;
+  }
+}
 
 .only-head-container {
-  width: 400px;
-}
-
-.only-text-container {
-  width: 472px;
-}
-
-@media (min-width: 768px) and (max-width: 1279px) {
-  #Only {
-    background: url("./../assets/images/tablet/herotablet.jpeg") no-repeat center -120px;
-    height: 1015px;
-    padding-top: 30px;
-  }
-  #Only .only-head-container {
-    margin-left: 124px;
-  }
-  #Only .only-text-container {
-    margin-left: 124px;
-  }
-  #Only .only-text-container .button {
-    margin-left: 126px;
-  }
+  max-width: 400px;
 }
 @media (min-width: 1280px) {
-  #Only {
-    height: 728px;
-  }
-  #Only .only-head-container {
+  .only-head-container {
     padding-top: 163px;
   }
 }
+@media (max-width: 767px) {
+  .only-head-container {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .only-head-container {
+    margin-left: 124px;
+  }
+}
+
+.only-text-container {
+  max-width: 472px;
+}
+@media (max-width: 767px) {
+  .only-text-container {
+    text-align: center;
+    max-width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .only-text-container {
+    margin-left: 124px;
+  }
+  .only-text-container .button {
+    margin-left: 126px;
+  }
+}
+
 .footer-main-container {
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
