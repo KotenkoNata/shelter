@@ -3,9 +3,17 @@
 
   padding: 80px 0 110px 0;
 
+  @include for-size(phone){
+    padding: 42px 0 59px 0;
+  }
+
   & .section-title{
     text-align: center;
     margin: 0 0 60px 0;
+
+    @include for-size(phone){
+      margin: 0 0 42px 0;
+    }
   }
 }
 
@@ -28,6 +36,12 @@
 
   margin-bottom: 77px;
 
+  @include for-size(phone){
+    position: relative;
+
+    margin-bottom: 124px;
+  }
+
   & li{
     background-color: $grey-white;
     text-align: center;
@@ -47,6 +61,30 @@
 
     &:hover{
       cursor: pointer;
+    }
+
+    @include for-size(phone){
+      display: none;
+
+      &:nth-child(2){
+        display: block;
+        margin: 0;
+      }
+
+      &.arrow-item{
+        display: flex;
+        position: absolute;
+        bottom: -70px;
+
+        &:first-child{
+          left: 58px;
+        }
+
+        &:last-of-type{
+          right: 58px;
+        }
+
+      }
     }
 
     &.arrow-item{
