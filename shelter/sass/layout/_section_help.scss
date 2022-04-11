@@ -10,10 +10,10 @@
   }
 
   & .help-title-container{
+    max-width: 310px;
+    text-align: center;
+    margin: 0 auto 60px auto;
 
-    @include for-size(desktop){
-      margin-bottom: 60px;
-    }
     @include for-size(phone){
       margin: 0 auto 42px auto;
       max-width: 250px;
