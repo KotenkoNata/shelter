@@ -38,11 +38,13 @@ img {
 }
 
 .container {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 
   @include for-size(phone) {
     max-width: $phone-width;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @include for-size(tablet) {
     max-width: $tablet-width;
@@ -51,7 +53,8 @@ img {
   }
   @include for-size(desktop) {
     max-width: $desktop-width;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

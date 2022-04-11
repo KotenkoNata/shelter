@@ -1,13 +1,12 @@
 #Only{
   @include for-size(desktop){
-    background: url('./../assets/images/desktop/herodesktop.jpeg') no-repeat center -120px;
+    background: url('./../assets/images/desktop/HeroDesktop1.jpeg') no-repeat center -180px;
     height: 728px;
   }
 
   @include for-size(tablet){
     background: url('./../assets/images/tablet/herotablet.jpeg') no-repeat center -120px;
     height: 1015px;
-
     padding-top: 30px;
   }
 

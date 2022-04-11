@@ -386,12 +386,14 @@ img {
 }
 
 .container {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media (max-width: 767px) {
   .container {
     max-width: 320px;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -404,7 +406,8 @@ img {
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -441,7 +444,7 @@ svg {
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
-  margin: 10px 0 0 0;
+  margin: 10px 0 0 5px;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .logo-text {
@@ -510,7 +513,7 @@ button.light-button {
   display: flex;
 }
 .navigation-list li {
-  margin-left: 35px;
+  margin-left: 36px;
 }
 .navigation-list li a {
   line-height: 160%;
@@ -592,7 +595,7 @@ button.light-button {
 }
 
 .main {
-  background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center 0;
+  background: url("./../assets/images/desktop/HeroDesktop1") no-repeat center 0;
 }
 
 @media (max-width: 767px) {
@@ -744,9 +747,11 @@ button.light-button {
 .footer-main-container {
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
+.footer-main-container #footer {
+  display: flex;
+}
 @media (min-width: 1280px) {
   .footer-main-container {
-    padding-bottom: 46px;
     padding-top: 53px;
   }
 }
