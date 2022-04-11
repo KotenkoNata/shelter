@@ -911,7 +911,11 @@ button.light-button {
 #about {
   padding: 80px 0 100px 0;
   margin: 0 auto;
-  width: 60%;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  #about {
+    width: 60%;
+  }
 }
 @media (max-width: 767px) {
   #about {
@@ -922,13 +926,23 @@ button.light-button {
 @media (min-width: 1280px) {
   #about {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    padding: 80px 0 100px 0;
   }
 }
-#about .about-text-container {
-  margin-bottom: 80px;
+@media (min-width: 1280px) {
+  #about .about-text-container {
+    margin-left: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  #about .about-text-container {
+    margin-bottom: 80px;
+  }
+}
+#about .about-text-container .about-title-container {
+  max-width: 390px;
 }
 @media (max-width: 767px) {
   #about .about-text-container {
@@ -945,11 +959,6 @@ button.light-button {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 1280px) {
-  #about .about-image-container {
-    margin-right: 120px;
-  }
-}
 #about .first {
   margin-bottom: 25px;
 }
@@ -960,7 +969,11 @@ button.light-button {
 }
 #about p {
   margin: 0;
-  text-align: justify;
+}
+@media (max-width: 767px) {
+  #about p {
+    text-align: justify;
+  }
 }
 
 #friends {

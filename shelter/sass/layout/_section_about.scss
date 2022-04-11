@@ -2,7 +2,10 @@
   padding: 80px 0 100px 0;
 
   margin: 0 auto;
-  width: 60%;
+
+  @include for-size(tablet){
+    width: 60%;
+  }
 
   @include for-size(phone){
     padding: 42px 0 40px 0;
@@ -11,18 +14,27 @@
 
   @include for-size(desktop){
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-
-    padding: 80px 0 100px 0;
   }
 
   & .about-text-container{
-    margin-bottom: 80px;
+
+    @include for-size(desktop){
+    margin-left: 120px;
+    }
+
+    @include for-size(tablet){
+      margin-bottom: 80px;
+    }
+
+    & .about-title-container{
+      max-width: 390px;
+    }
 
     @include for-size(phone){
       padding: 0 15px;
-
       margin-bottom: 42px;
     }
 
@@ -33,10 +45,6 @@
   & .about-image-container{
     display: flex;
     justify-content: center;
-
-    @include for-size(desktop){
-      margin-right: 120px;
-    }
   }
 
   & .first{
@@ -49,7 +57,11 @@
 
   & p{
     margin: 0;
-    text-align: justify;
+
+    @include for-size(phone){
+      text-align: justify;
+    }
+
   }
 }
 
