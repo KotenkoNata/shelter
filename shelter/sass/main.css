@@ -1054,7 +1054,7 @@ button.light-button {
 }
 @media (max-width: 767px) {
   #help {
-    padding: 42px 5px 42px 5px;
+    padding: 42px 5px 41px 5px;
   }
 }
 @media (min-width: 1280px) {
@@ -1112,7 +1112,7 @@ button.light-button {
   #help ul li:nth-child(2n) {
     margin-right: 0;
   }
-  #help ul li:nth-child(0) {
+  #help ul li:nth-child(9) {
     margin-bottom: 0;
   }
 }
@@ -1150,18 +1150,43 @@ button.light-button {
   color: #545454;
   padding: 80px 0 100px 0;
 }
+@media (max-width: 767px) {
+  #donation {
+    padding: 42px 0;
+  }
+}
+@media (max-width: 767px) {
+  #donation .donation-title-container {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+}
 #donation .section-title {
   text-align: left;
   margin: 0 0 20px 0;
 }
-#donation .donation-image-container {
-  margin-right: 30px;
+@media (max-width: 767px) {
+  #donation .section-title {
+    text-align: center;
+    margin: 0 0 22px 0;
+  }
+}
+@media (min-width: 1280px) {
+  #donation .donation-image-container {
+    margin-right: 30px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   #donation .donation-image-container {
     display: flex;
     justify-content: center;
     margin: 60px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  #donation .donation-image-container {
+    display: flex;
+    justify-content: center;
   }
 }
 #donation .donation-text-container {
@@ -1178,6 +1203,13 @@ button.light-button {
   letter-spacing: 0.06em;
   margin: 0 0 20px 0;
 }
+@media (max-width: 767px) {
+  #donation .donation-text-container .donation-bank {
+    text-align: center;
+    letter-spacing: 0;
+    margin: 0 0 24px 0;
+  }
+}
 
 .donation-card-link {
   background-color: #F1CDB3;
@@ -1185,12 +1217,25 @@ button.light-button {
   border-radius: 9px;
   display: inline-flex;
 }
+@media (max-width: 767px) {
+  .donation-card-link {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .donation-card-link span {
   margin-left: 15px;
   font-family: "Georgia W05 Regular5162277", serif;
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
+}
+@media (max-width: 767px) {
+  .donation-card-link span {
+    line-height: 110%;
+    font-size: 15px;
+    margin-left: 12px;
+  }
 }
 .donation-card-link svg {
   margin-left: 1px;
@@ -1207,6 +1252,11 @@ button.light-button {
     align-items: center;
   }
 }
+@media (max-width: 767px) {
+  .donation-flex {
+    padding: 0 10px;
+  }
+}
 
 .donation-italic-text {
   font-family: "Arial MT W01 Regular", sans-serif;
@@ -1216,6 +1266,12 @@ button.light-button {
   line-height: 18px;
   color: #B2B2B2;
   margin: 20px 0 0 0;
+}
+@media (max-width: 767px) {
+  .donation-italic-text {
+    text-align: justify;
+    margin-bottom: 42px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

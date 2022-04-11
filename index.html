@@ -216,7 +216,9 @@
         <div class="container">
             <div class="donation-flex">
             <div class="donation-text-container">
-                <h2 class="section-title">You can also<br> make a donation</h2>
+                <div class="donation-title-container">
+                    <h2 class="section-title">You can also make a donation</h2>
+                </div>
                 <p class="donation-bank">Name of the bank / Type of bank account</p>
                 <a class="donation-card-link" href="#">
                     <svg width="30px" height="23px">
@@ -227,7 +229,22 @@
                 <p class="donation-italic-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
             </div>
                 <div class="donation-image-container">
-                    <img src="shelter/assets/images/donation-dog.png" alt="Puppy">
+                    <picture>
+                        <source srcset="shelter/assets/images/desktop/donation-dogDesktop.png"
+                                media="(min-width: 1200px)"
+                        />
+                        <source
+                                srcset="shelter/assets/images/tablet/donation-dogTablet.png"
+                                media="(min-width: 768px)"
+                        />
+                        <source
+                                srcset="shelter/assets/images/phone/donation-dogPhone.png"
+                                media="(max-width: 767px)"
+                        />
+                        <img src="shelter/assets/images/desktop/donation-dogDesktop.png" alt="Puppy">
+                    </picture>
+
+
                 </div>
             </div>
         </div>
