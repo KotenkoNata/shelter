@@ -12,11 +12,12 @@
 
 .footer-main-container{
   @include for-size(desktop){
+    display: flex;
     padding-top: 40px;
   }
 
   @include for-size(tablet){
-    padding: 30px 30px 0 30px;
+    padding: 30px 30px 0 33px;
   }
 
 
@@ -37,9 +38,6 @@
     display: flex;
     justify-content: flex-start;
 
-    @include for-size(tablet){
-      padding: 0 34px;
-    }
     @include for-size(phone){
       padding-top: 30px;
       margin-bottom: 37px;
@@ -160,16 +158,16 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 300px;
+    max-width: 260px;
   }
 }
 
 .footer-img-container{
   @include for-size(tablet){
-    margin-right: auto;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
 
-    margin-top: 60px;
+    margin-top: 65px;
   }
 
   @include for-size(phone){
