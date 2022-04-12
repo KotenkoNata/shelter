@@ -9,22 +9,22 @@
   }
 
   & .donation-title-container{
+    max-width: 300px;
+
      @include for-size(phone){
        max-width: 220px;
        margin: 0 auto;
      }
-    @include for-size(desktop){
-      max-width: 300px;
-    }
   }
 
   & .section-title{
     text-align: left;
+    margin: 0 0 20px 0;
+
     @include for-size(phone){
       text-align: center;
       margin: 0 0 22px 0;
     }
-    margin: 0 0 20px 0;
   }
 
   & .donation-image-container{
@@ -43,7 +43,6 @@
       display: flex;
       justify-content: center;
     }
-
   }
 
   & .donation-text-container{

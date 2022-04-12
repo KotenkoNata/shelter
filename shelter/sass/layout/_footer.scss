@@ -3,10 +3,14 @@
 
   #footer{
     display: flex;
+
+    @include for-size(tablet){
+      flex-wrap: wrap;
+    }
   }
 
   @include for-size(desktop){
-    padding-top: 53px;
+    padding-top: 40px;
   }
 
   @include for-size(tablet){
@@ -16,9 +20,13 @@
 
   & .section-title{
     color: $white;
-    margin:  0 0 42px 0;
+    margin:  0 0 40px 0;
 
     @include for-size(phone){
+      margin:  0 0 40px 0;
+    }
+
+    @include for-size(desktop){
       margin:  0 0 40px 0;
     }
   }
@@ -35,22 +43,36 @@
       margin-bottom: 40px;
       display: block;
     }
+
+    @include for-size(desktop){
+      margin-top: 16px;
+    }
   }
 
   & .footer-contact{
     @include for-size(desktop){
-      margin-right: 160px;
+      margin-right: 140px;
     }
 
     @include for-size(tablet){
       width: calc((100% - 60px) / 2);
       margin-right: 49px;
     }
+
+    & .footer-contact-title-container{
+      @include for-size(desktop){
+      max-width: 300px;
+      }
+    }
   }
 
   & .footer-address{
     @include for-size(tablet) {
     width: calc((100% - 60px) / 2);
+    }
+
+    @include for-size(desktop){
+      margin-right: 120px;
     }
   }
 
@@ -74,20 +96,20 @@
       margin-bottom: 40px;
     }
     & li:nth-child(2){
-      padding-left: 6px;
+      @include for-size(phone){
+        padding-left: 6px;
+      }
+
     }
 
   }
 
   & .footer-contact-list li:first-child{
-    margin-bottom: 43px;
-    @include for-size(phone){
-      margin-bottom: 40px;
-    }
+    margin-bottom: 40px;
   }
 
   & .footer-address-list li:first-child{
-    margin-bottom: 36px;
+    margin-bottom: 31px;
 
     @include for-size(phone){
       margin-bottom: 40px;
@@ -95,7 +117,7 @@
   }
 
   & .footer-address .section-title{
-    margin: 0 0 35px 0;
+    margin: 0 0 33px 0;
 
     @include for-size(phone){
       margin: 0 0 40px 0;
@@ -114,9 +136,19 @@
     display: inline-block;
     vertical-align: middle;
 
-    margin: -3px 18px 0 0;
+    @include for-size(desktop){
+      margin: 0 16px 0 0;
+    }
+    margin: 0 18px 0 0;
   }
 }
+
+.footer-address-list li{
+  &:nth-child(2) a svg{
+    margin: 0 15px 0 0;
+  }
+}
+
 
 .footer-address-text{
   display: flex;
@@ -132,8 +164,8 @@
 
 .footer-img-container{
   @include for-size(tablet){
-    display: flex;
-    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 
     margin-top: 60px;
   }
@@ -145,6 +177,10 @@
 }
 
 .footer-address-title-container{
+  @include for-size(desktop){
+    max-width: 300px;
+  }
+
   @include for-size(phone){
     max-width: 280px;
     margin: 0 auto;
