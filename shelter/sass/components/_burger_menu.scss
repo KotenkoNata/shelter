@@ -15,6 +15,10 @@ body.lock{
     & .main-icon{
       margin-right: 53px;
     }
+
+    & .menu-icon.active::after, .menu-icon.active::before, .menu-icon.active span{
+      background-color: $beige;
+    }
   }
 }
 
@@ -72,17 +76,6 @@ body.lock{
     background-color: $black;
     transition: right 0.3s ease 0s;
     overflow: auto;
-
-    //&::before{
-    //  content: "";
-    //  position: fixed;
-    //  width: 100%;
-    //  top: 0;
-    //  left: 0;
-    //  height: 70px;
-    //  background-color: #513D2F;
-    //  z-index: 2;
-    //}
 
     & .navigation-list{
       padding: 100px 0 0 0;

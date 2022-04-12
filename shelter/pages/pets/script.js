@@ -15,11 +15,13 @@ function myFunction() {
 
 const iconMenu = document.querySelector(".menu-icon");
 const menuBody = document.querySelector(".menu-body");
+const logo = document.querySelector(".logo-container");
 
 if(iconMenu){
   iconMenu.addEventListener("click", function (e) {
     document.body.classList.toggle('lock')
     iconMenu.classList.toggle('active');
     menuBody.classList.toggle('active');
+    logo.classList.toggle('active');
   })
 }

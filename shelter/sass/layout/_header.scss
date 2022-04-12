@@ -45,6 +45,15 @@
   @include for-size(phone){
     z-index: 2;
   }
+
+  &.active{
+    & .logo-title{
+      color: $beige;
+    }
+    & .logo-text{
+      color: $white;
+    }
+  }
 }
 
 .main{

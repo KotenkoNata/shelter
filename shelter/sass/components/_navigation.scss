@@ -59,11 +59,20 @@
   .navigation-list{
     & li{
       margin-left: 36px;
+
+      @include for-size(phone){
+        margin-left: 0;
+      }
       & a{
         color: $dark-grey;
 
+        @include for-size(phone){
+          color: $grey;
+        }
+
         &:hover{
           cursor: pointer;
+          color: $grey-white;
         }
       }
     }

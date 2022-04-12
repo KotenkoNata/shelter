@@ -446,6 +446,9 @@ body.lock {
   #petsHeader .main-icon {
     margin-right: 53px;
   }
+  #petsHeader .menu-icon.active::after, #petsHeader .menu-icon.active::before, #petsHeader .menu-icon.active span {
+    background-color: #F1CDB3;
+  }
 }
 .menu-icon {
   display: none;
@@ -640,11 +643,22 @@ button.light-button {
 .pets-header .navigation-list li {
   margin-left: 36px;
 }
+@media (max-width: 767px) {
+  .pets-header .navigation-list li {
+    margin-left: 0;
+  }
+}
 .pets-header .navigation-list li a {
   color: #545454;
 }
+@media (max-width: 767px) {
+  .pets-header .navigation-list li a {
+    color: #CDCDCD;
+  }
+}
 .pets-header .navigation-list li a:hover {
   cursor: pointer;
+  color: #FAFAFA;
 }
 
 .pets-header {
@@ -697,6 +711,12 @@ button.light-button {
   .logo-container {
     z-index: 2;
   }
+}
+.logo-container.active .logo-title {
+  color: #F1CDB3;
+}
+.logo-container.active .logo-text {
+  color: #FFFFFF;
 }
 
 .main {
