@@ -597,7 +597,7 @@ button.light-button {
   content: " ";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -1px;
   display: block;
   width: 100%;
   height: 4px;
@@ -620,7 +620,7 @@ button.light-button {
 }
 .pets-header .header-container {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .pets-header .header-container {
@@ -781,7 +781,6 @@ button.light-button {
 
 #footer {
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  display: flex;
 }
 @media (max-width: 767px) {
   #footer {
@@ -833,6 +832,7 @@ button.light-button {
 @media (min-width: 1280px) {
   .footer-main-container .footer-container {
     margin-top: 16px;
+    margin-right: 40px;
   }
 }
 @media (min-width: 1280px) {
