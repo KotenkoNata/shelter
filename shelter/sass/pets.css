@@ -466,6 +466,7 @@ button.light-button {
 }
 .navigation-list li a:hover {
   cursor: pointer;
+  color: #FAFAFA;
 }
 
 .current {
@@ -491,6 +492,7 @@ button.light-button {
 }
 .pets-header .navigation-list li a:hover {
   cursor: pointer;
+  color: #292929;
 }
 
 .pets-header {
