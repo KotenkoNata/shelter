@@ -595,24 +595,9 @@ button.light-button {
 }
 
 .main {
-  background: url("./../assets/images/desktop/HeroDesktop1") no-repeat center 0;
+  background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
-@media (max-width: 767px) {
-  .main {
-    background: url("./../assets/images/phone/herophone.jpeg") no-repeat center 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 1279px) {
-  .main {
-    background: url("./../assets/images/tablet/herotablet.jpeg") no-repeat center 0;
-  }
-}
-@media (min-width: 1280px) {
-  .main {
-    background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center 0;
-  }
-}
 #friends {
   background-color: #F6F6F6;
   padding: 80px 0 100px 0;
@@ -744,22 +729,21 @@ button.light-button {
   background-color: #F1CDB3;
 }
 
-.footer-main-container {
+#footer {
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-}
-.footer-main-container #footer {
   display: flex;
 }
 @media (max-width: 767px) {
-  .footer-main-container #footer {
+  #footer {
     display: block;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
-  .footer-main-container #footer {
+  #footer {
     flex-wrap: wrap;
   }
 }
+
 @media (min-width: 1280px) {
   .footer-main-container {
     padding-top: 40px;

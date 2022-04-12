@@ -38,14 +38,36 @@
 
     <section id="Only">
         <div class="container">
-            <div class="only-head-container">
-                <h2>Not only people need a house</h2>
-            </div>
-            <div class="only-text-container">
-                <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                <a href="#friends" type="button" class="button">Make a friend</a>
-            </div>
+            <div class="only-section-container">
+                <div class="only-text-part-container">
+                    <div class="only-head-container">
+                        <h2>Not only people need a house</h2>
+                    </div>
+                    <div class="only-text-container">
+                        <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                        <a href="#friends" type="button" class="button">Make a friend</a>
+                    </div>
+                </div>
 
+            <div class="hero-image-container">
+                <picture>
+                    <source srcset="shelter/assets/images/desktop/StartDesktop.png"
+                            media="(min-width: 1200px)"
+                    />
+                    <source
+                            srcset="shelter/assets/images/tablet/StartTablet.png"
+                            media="(min-width: 768px)"
+                    />
+                    <source
+                            srcset="shelter/assets/images/phone/StartPhone.png"
+                            media="(max-width: 767px)"
+                    />
+                    <img src="shelter/assets/images/desktop/StartDesktop.png" alt="Puppy">
+                </picture>
+
+
+            </div>
+            </div>
         </div>
     </section>
 
@@ -255,8 +277,9 @@
     </section>
 
 </main>
-<div class="container footer-main-container">
     <footer id="footer">
+<div class="container footer-main-container">
+
         <div class="footer-container">
             <div class="footer-contact">
                 <div class="footer-contact-title-container">
@@ -330,8 +353,9 @@
                 <img src="shelter/assets/images/desktop/footer-puppyDesktop.png" alt="Puppy">
             </picture>
         </div>
-    </footer>
+
 </div>
+    </footer>
 </div>
 <script src="shelter/pages/main/script.js"></script>
 </body>

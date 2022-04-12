@@ -1,17 +1,15 @@
 #Only{
+  background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   @include for-size(desktop){
-    background: url('./../assets/images/desktop/HeroDesktop1.jpeg') no-repeat center -180px;
     height: 728px;
   }
 
   @include for-size(tablet){
-    background: url('./../assets/images/tablet/herotablet.jpeg') no-repeat center -120px;
     height: 1015px;
     padding-top: 30px;
   }
 
   @include for-size(phone){
-    background: url('./../assets/images/phone/herophone.jpeg') no-repeat center -90px;
     height: 731px;
   }
 
@@ -39,6 +37,28 @@
       margin: 0 0 40px 0;
 
     }
+  }
+}
+
+.only-section-container{
+  @include for-size(desktop){
+    display: flex;
+  }
+
+
+  & .only-text-part-container{
+    @include for-size(desktop){
+      margin-right: 30px;
+    }
+
+    @include for-size(tablet){
+      margin-bottom: 100px;
+    }
+
+    @include for-size(phone){
+      margin-bottom: 106px;
+    }
+
   }
 }
 
@@ -73,6 +93,15 @@
     & .button{
       margin-left: 126px;
     }
+  }
+}
+
+.hero-image-container{
+  display: flex;
+  justify-content: flex-end;
+
+  @include for-size(desktop){
+    display: block;
   }
 }
 
