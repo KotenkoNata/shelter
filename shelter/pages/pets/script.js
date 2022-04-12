@@ -13,15 +13,25 @@ function myFunction() {
 
 //Burger menu
 
-const iconMenu = document.querySelector(".menu-icon");
-const menuBody = document.querySelector(".menu-body");
-const logo = document.querySelector(".logo-container");
+(() => {
+  const refs = {
+    openMenu: document.querySelector(".menu-icon"),
+    menu: document.querySelector(".menu-body"),
+    menuItems: document.querySelectorAll(".menu-body li"),
+    body: document.querySelector('body'),
+    logo: document.querySelector(".logo-container"),
+  };
 
-if(iconMenu){
-  iconMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle('lock')
-    iconMenu.classList.toggle('active');
-    menuBody.classList.toggle('active');
-    logo.classList.toggle('active');
+  function toggleModal() {
+    refs.openMenu.classList.toggle("active");
+    refs.menu.classList.toggle("active");
+    refs.logo.classList.toggle("active")
+    refs.body.classList.toggle('lock');
+  }
+
+  refs.openMenu.addEventListener("click", toggleModal);
+  refs.menuItems.forEach(el => {
+    el.addEventListener('click', toggleModal)
   })
-}
+
+})();

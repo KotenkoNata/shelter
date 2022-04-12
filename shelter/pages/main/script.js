@@ -1,12 +1,21 @@
 //Burger menu
+(() => {
+  const refs = {
+    openMenu: document.querySelector(".menu-icon"),
+    menu: document.querySelector(".menu-body"),
+    menuItems: document.querySelectorAll(".menu-body li"),
+    body: document.querySelector('body'),
+  };
 
-const iconMenu = document.querySelector(".menu-icon");
-const menuBody = document.querySelector(".menu-body");
+  function toggleModal() {
+    refs.openMenu.classList.toggle("active");
+    refs.menu.classList.toggle("active");
+    refs.body.classList.toggle('lock');
+  }
 
-if(iconMenu){
-  iconMenu.addEventListener("click", function (e) {
-    document.body.classList.toggle('lock')
-    iconMenu.classList.toggle('active');
-    menuBody.classList.toggle('active');
+  refs.openMenu.addEventListener("click", toggleModal);
+  refs.menuItems.forEach(el => {
+    el.addEventListener('click', toggleModal)
   })
-}
+
+})();
