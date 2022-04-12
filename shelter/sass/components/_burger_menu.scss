@@ -6,6 +6,18 @@ body.lock{
   min-height: 100%;
 }
 
+@include for-size(phone) {
+  #petsHeader {
+    & .menu-icon::after, .menu-icon::before, .menu-icon span {
+      background-color: $burger-black;
+    }
+
+    & .main-icon{
+      margin-right: 53px;
+    }
+  }
+}
+
 .menu-icon{
   display: none;
 
@@ -18,6 +30,8 @@ body.lock{
     cursor: pointer;
 
     margin-right: 43px;
+
+
 
     &::after, &::before, & span{
       left: 0;

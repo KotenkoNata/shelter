@@ -439,6 +439,14 @@ body.lock {
   min-height: 100%;
 }
 
+@media (max-width: 767px) {
+  #petsHeader .menu-icon::after, #petsHeader .menu-icon::before, #petsHeader .menu-icon span {
+    background-color: #000000;
+  }
+  #petsHeader .main-icon {
+    margin-right: 53px;
+  }
+}
 .menu-icon {
   display: none;
 }
