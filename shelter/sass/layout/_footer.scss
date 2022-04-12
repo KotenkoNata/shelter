@@ -159,7 +159,13 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    max-width: 260px;
+
+    width: 300px;
+
+    @include for-size(phone){
+      max-width: 260px;
+    }
+
   }
 }
 
