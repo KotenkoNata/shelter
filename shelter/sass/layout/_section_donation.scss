@@ -13,6 +13,9 @@
        max-width: 220px;
        margin: 0 auto;
      }
+    @include for-size(desktop){
+      max-width: 300px;
+    }
   }
 
   & .section-title{
@@ -109,6 +112,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
   }
   @include for-size(phone){
     padding: 0 10px;

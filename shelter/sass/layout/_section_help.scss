@@ -2,7 +2,7 @@
   padding: 80px 85px 45px 85px;
 
   @include for-size(tablet){
-    padding: 80px 39px 45px 39px;
+    padding: 80px 39px 46px 39px;
   }
 
   @include for-size(phone){
@@ -49,7 +49,7 @@
         line-height: 115%;
         letter-spacing: 0.06em;
 
-        margin: 22px 0 0 0;
+        margin: 21px 0 0 0;
 
         @include for-size(phone){
           font-size: 15px;

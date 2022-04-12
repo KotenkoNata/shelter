@@ -1116,7 +1116,7 @@ button.light-button {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   #help {
-    padding: 80px 39px 45px 39px;
+    padding: 80px 39px 46px 39px;
   }
 }
 @media (max-width: 767px) {
@@ -1161,7 +1161,7 @@ button.light-button {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  margin: 22px 0 0 0;
+  margin: 21px 0 0 0;
 }
 @media (max-width: 767px) {
   #help ul li p {
@@ -1226,6 +1226,11 @@ button.light-button {
   #donation .donation-title-container {
     max-width: 220px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1280px) {
+  #donation .donation-title-container {
+    max-width: 300px;
   }
 }
 #donation .section-title {
@@ -1317,6 +1322,7 @@ button.light-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
   }
 }
 @media (max-width: 767px) {
