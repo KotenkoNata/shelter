@@ -3,6 +3,9 @@
 
   #footer{
     display: flex;
+    @include for-size(phone){
+      display: block;
+    }
 
     @include for-size(tablet){
       flex-wrap: wrap;
@@ -40,7 +43,7 @@
     }
     @include for-size(phone){
       padding-top: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 37px;
       display: block;
     }
 
@@ -120,7 +123,7 @@
     margin: 0 0 33px 0;
 
     @include for-size(phone){
-      margin: 0 0 40px 0;
+      margin: 0 0 38px 0;
     }
   }
 

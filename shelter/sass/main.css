@@ -769,6 +769,11 @@ button.light-button {
 .footer-main-container #footer {
   display: flex;
 }
+@media (max-width: 767px) {
+  .footer-main-container #footer {
+    display: block;
+  }
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   .footer-main-container #footer {
     flex-wrap: wrap;
@@ -810,7 +815,7 @@ button.light-button {
 @media (max-width: 767px) {
   .footer-main-container .footer-container {
     padding-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
     display: block;
   }
 }
@@ -884,7 +889,7 @@ button.light-button {
 }
 @media (max-width: 767px) {
   .footer-main-container .footer-address .section-title {
-    margin: 0 0 40px 0;
+    margin: 0 0 38px 0;
   }
 }
 .footer-main-container .footer-contact-list li a svg {
