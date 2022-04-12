@@ -1,12 +1,28 @@
 .navigation-list{
   display: flex;
 
+  @include for-size(phone){
+    display: block;
+    margin-top: 150px;
+  }
+
   & li{
     margin-left: 36px;
+
+    @include for-size(phone){
+      margin: 0 0 42px 0;
+      text-align: center;
+
+    }
 
     & a{
       line-height: 160%;
       color: $grey;
+
+      @include for-size(phone){
+        font-size: 32px;
+        color: $grey-white;
+      }
 
       &:hover{
         cursor: pointer;
@@ -31,6 +47,11 @@
     height: 4px;
     background-color: $beige;
     border-radius: 2px;
+
+    @include for-size(phone){
+      width: 100%;
+      bottom: -10px;
+    }
   }
 }
 

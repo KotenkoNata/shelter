@@ -31,8 +31,6 @@ body.lock{
 
     margin-right: 43px;
 
-
-
     &::after, &::before, & span{
       left: 0;
       position: absolute;
@@ -74,6 +72,17 @@ body.lock{
     background-color: $black;
     transition: right 0.3s ease 0s;
     overflow: auto;
+
+    //&::before{
+    //  content: "";
+    //  position: fixed;
+    //  width: 100%;
+    //  top: 0;
+    //  left: 0;
+    //  height: 70px;
+    //  background-color: #513D2F;
+    //  z-index: 2;
+    //}
 
     & .navigation-list{
       padding: 100px 0 0 0;

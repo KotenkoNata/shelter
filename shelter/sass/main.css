@@ -587,12 +587,30 @@ button.light-button {
 .navigation-list {
   display: flex;
 }
+@media (max-width: 767px) {
+  .navigation-list {
+    display: block;
+    margin-top: 150px;
+  }
+}
 .navigation-list li {
   margin-left: 36px;
+}
+@media (max-width: 767px) {
+  .navigation-list li {
+    margin: 0 0 42px 0;
+    text-align: center;
+  }
 }
 .navigation-list li a {
   line-height: 160%;
   color: #CDCDCD;
+}
+@media (max-width: 767px) {
+  .navigation-list li a {
+    font-size: 32px;
+    color: #FAFAFA;
+  }
 }
 .navigation-list li a:hover {
   cursor: pointer;
@@ -611,6 +629,12 @@ button.light-button {
   height: 4px;
   background-color: #F1CDB3;
   border-radius: 2px;
+}
+@media (max-width: 767px) {
+  .current::after {
+    width: 100%;
+    bottom: -10px;
+  }
 }
 
 .pets-header .navigation-list li {
@@ -666,6 +690,12 @@ button.light-button {
 @media (max-width: 767px) {
   .header-container {
     padding-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo-container {
+    z-index: 2;
   }
 }
 

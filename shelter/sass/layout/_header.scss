@@ -41,28 +41,14 @@
   }
 }
 
-.main{
-  //background: url("./../assets/images/desktop/HeroDesktop1") no-repeat center 0;
+.logo-container{
+  @include for-size(phone){
+    z-index: 2;
+  }
+}
 
+.main{
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
-@include for-size(phone){
-  .main{
-    //background: url("./../assets/images/phone/herophone.jpeg") no-repeat center 0;
-  }
-}
-
-@include for-size(tablet){
-  .main{
-    //background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    //background: url("./../assets/images/tablet/herotablet.jpeg") no-repeat center 0;
-  }
-}
-
-@include for-size(desktop){
-  .main{
-    //background: url("./../assets/images/desktop/herodesktop.jpeg") no-repeat center 0;
-  }
-}
 
