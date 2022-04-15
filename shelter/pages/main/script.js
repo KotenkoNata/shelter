@@ -14,6 +14,9 @@
   }
 
   refs.openMenu.addEventListener("click", toggleModal);
+
+  refs.menu.addEventListener("click", toggleModal)
+
   refs.menuItems.forEach(el => {
     el.addEventListener('click', toggleModal)
   })
