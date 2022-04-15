@@ -29,6 +29,7 @@ function myFunction() {
     refs.body.classList.toggle('lock');
   }
 
+  refs.menu.addEventListener("click", toggleModal);
   refs.openMenu.addEventListener("click", toggleModal);
   refs.menuItems.forEach(el => {
     el.addEventListener('click', toggleModal)
