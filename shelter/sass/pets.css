@@ -868,8 +868,9 @@ button.light-button {
   font-size: 20px;
   line-height: 115%;
 }
-.pets-list-control li button:hover {
+.pets-list-control li .fourth:hover, .pets-list-control .fifth:hover {
   cursor: pointer;
+  background-color: #F1CDB3;
 }
 .pets-list-control li .first, .pets-list-control .fifth {
   padding: 12px 10px;

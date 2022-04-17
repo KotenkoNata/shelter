@@ -153,11 +153,11 @@
 
     font-size: 20px;
     line-height: 115%;
+  }
 
-    &:hover{
-      cursor: pointer;
-    }
-
+  & li .fourth:hover, .fifth:hover{
+    cursor: pointer;
+    background-color: $beige;
   }
 
   & li .first, .fifth{
@@ -182,6 +182,4 @@
     border-color: $beige;
     background-color: $beige;
   }
-
-
 }
