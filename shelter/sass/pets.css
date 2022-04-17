@@ -496,6 +496,7 @@ body.lock {
     background-color: #292929;
     transition: right 0.3s ease 0s;
     overflow: auto;
+    z-index: 1;
   }
   .menu-body .navigation-list {
     padding: 100px 0 0 0;
@@ -597,7 +598,7 @@ button.light-button {
 }
 @media (max-width: 767px) {
   .navigation-list li {
-    margin: 0 0 42px 0;
+    margin: 0 0 41px 0;
     text-align: center;
   }
 }

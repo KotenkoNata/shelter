@@ -76,6 +76,7 @@ body.lock{
     background-color: $black;
     transition: right 0.3s ease 0s;
     overflow: auto;
+    z-index: 1;
 
     & .navigation-list{
       padding: 100px 0 0 0;
