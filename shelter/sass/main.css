@@ -843,6 +843,7 @@ button.light-button {
     position: absolute;
     bottom: 0;
     right: 0;
+    transform: translateX(-5%);
   }
 }
 @media (min-width: 1280px) {
@@ -892,7 +893,6 @@ button.light-button {
 }
 .footer-main-container .footer-container {
   display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .footer-main-container .footer-container {
@@ -903,6 +903,7 @@ button.light-button {
 }
 @media (min-width: 1280px) {
   .footer-main-container .footer-container {
+    justify-content: space-between;
     margin-top: 20px;
   }
 }
@@ -1244,12 +1245,12 @@ button.light-button {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   #help {
-    padding: 80px 39px 46px 39px;
+    padding: 82px 39px 46px 39px;
   }
 }
 @media (max-width: 767px) {
   #help {
-    padding: 42px 5px 41px 5px;
+    padding: 44px 5px 41px 5px;
   }
 }
 #help .help-title-container {
@@ -1289,7 +1290,7 @@ button.light-button {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  margin: 21px 0 0 0;
+  margin: 23px 0 0 0;
 }
 @media (min-width: 1280px) {
   #help ul li p {
@@ -1300,7 +1301,7 @@ button.light-button {
   #help ul li p {
     font-size: 15px;
     line-height: 110%;
-    margin: 12px 0 0 0;
+    margin: 13px 0 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -1357,7 +1358,7 @@ button.light-button {
 }
 @media (max-width: 767px) {
   #donation {
-    padding: 42px 0;
+    padding: 43px 0;
   }
 }
 #donation .donation-title-container {

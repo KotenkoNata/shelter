@@ -2,11 +2,11 @@
   padding: 80px 85px 45px 85px;
 
   @include for-size(tablet){
-    padding: 80px 39px 46px 39px;
+    padding: 82px 39px 46px 39px;
   }
 
   @include for-size(phone){
-    padding: 42px 5px 41px 5px;
+    padding: 44px 5px 41px 5px;
   }
 
   & .help-title-container{
@@ -49,7 +49,7 @@
         line-height: 115%;
         letter-spacing: 0.06em;
 
-        margin: 21px 0 0 0;
+        margin: 23px 0 0 0;
 
         @include for-size(desktop){
           margin: 24px 0 0 0;
@@ -59,7 +59,7 @@
           font-size: 15px;
           line-height: 110%;
 
-          margin: 12px 0 0 0;
+          margin: 13px 0 0 0;
         }
       }
 

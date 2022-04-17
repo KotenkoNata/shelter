@@ -36,7 +36,7 @@
 
   & .footer-container{
     display: flex;
-    justify-content: space-between;
+
 
     @include for-size(phone){
       padding-top: 30px;
@@ -45,6 +45,7 @@
     }
 
     @include for-size(desktop){
+      justify-content: space-between;
       margin-top: 20px;
     }
   }

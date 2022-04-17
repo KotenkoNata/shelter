@@ -929,7 +929,6 @@ button.light-button {
 }
 .footer-main-container .footer-container {
   display: flex;
-  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .footer-main-container .footer-container {
@@ -940,6 +939,7 @@ button.light-button {
 }
 @media (min-width: 1280px) {
   .footer-main-container .footer-container {
+    justify-content: space-between;
     margin-top: 20px;
   }
 }
