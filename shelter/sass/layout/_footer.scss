@@ -13,7 +13,7 @@
 .footer-main-container{
   @include for-size(desktop){
     display: flex;
-    padding-top: 40px;
+    padding-top: 38px;
   }
 
   @include for-size(tablet){
@@ -36,7 +36,7 @@
 
   & .footer-container{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 
     @include for-size(phone){
       padding-top: 30px;
@@ -45,8 +45,7 @@
     }
 
     @include for-size(desktop){
-      margin-top: 16px;
-      margin-right: 40px;
+      margin-top: 20px;
     }
   }
 

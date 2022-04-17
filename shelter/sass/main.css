@@ -722,20 +722,27 @@ button.light-button {
 #Only {
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
-@media (min-width: 1280px) {
-  #Only {
-    height: 728px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1279px) {
   #Only {
-    height: 1015px;
     padding-top: 30px;
   }
 }
+#Only .container {
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  #Only .container {
+    height: 1015px;
+  }
+}
 @media (max-width: 767px) {
-  #Only {
+  #Only .container {
     height: 731px;
+  }
+}
+@media (min-width: 1280px) {
+  #Only .container {
+    height: 728px;
   }
 }
 #Only h2 {
@@ -794,7 +801,7 @@ button.light-button {
 }
 @media (max-width: 767px) {
   .only-head-container {
-    max-width: 200px;
+    max-width: 220px;
     margin: 0 auto;
     padding-top: 58px;
   }
@@ -823,9 +830,20 @@ button.light-button {
   }
 }
 
-.hero-image-container {
-  display: flex;
-  justify-content: flex-end;
+@media (min-width: 768px) and (max-width: 1279px) {
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-5%);
+  }
+}
+@media (max-width: 767px) {
+  .hero-image-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 @media (min-width: 1280px) {
   .hero-image-container {
@@ -850,7 +868,7 @@ button.light-button {
 @media (min-width: 1280px) {
   .footer-main-container {
     display: flex;
-    padding-top: 40px;
+    padding-top: 38px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -874,7 +892,7 @@ button.light-button {
 }
 .footer-main-container .footer-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .footer-main-container .footer-container {
@@ -885,8 +903,7 @@ button.light-button {
 }
 @media (min-width: 1280px) {
   .footer-main-container .footer-container {
-    margin-top: 16px;
-    margin-right: 40px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1280px) {
@@ -1274,6 +1291,11 @@ button.light-button {
   letter-spacing: 0.06em;
   margin: 21px 0 0 0;
 }
+@media (min-width: 1280px) {
+  #help ul li p {
+    margin: 24px 0 0 0;
+  }
+}
 @media (max-width: 767px) {
   #help ul li p {
     font-size: 15px;
@@ -1327,6 +1349,11 @@ button.light-button {
   background-color: #F6F6F6;
   color: #545454;
   padding: 80px 0 100px 0;
+}
+@media (min-width: 1280px) {
+  #donation {
+    padding: 78px 0 100px 0;
+  }
 }
 @media (max-width: 767px) {
   #donation {

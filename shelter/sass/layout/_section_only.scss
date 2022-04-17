@@ -1,16 +1,27 @@
 #Only{
   background: url("./../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  @include for-size(desktop){
-    height: 728px;
-  }
+
 
   @include for-size(tablet){
-    height: 1015px;
     padding-top: 30px;
   }
 
-  @include for-size(phone){
-    height: 731px;
+
+
+  & .container{
+    position: relative;
+
+    @include for-size(tablet){
+      height: 1015px;
+    }
+
+    @include for-size(phone){
+      height: 731px;
+    }
+    @include for-size(desktop){
+      height: 728px;
+    }
+
   }
 
 
@@ -70,7 +81,7 @@
   }
 
   @include for-size(phone){
-    max-width: 200px;
+    max-width: 220px;
     margin: 0 auto;
     padding-top: 58px;
   }
@@ -97,8 +108,19 @@
 }
 
 .hero-image-container{
-  display: flex;
-  justify-content: flex-end;
+  @include for-size(tablet){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-5%);
+  }
+
+
+  @include for-size(phone){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 
   @include for-size(desktop){
     display: block;

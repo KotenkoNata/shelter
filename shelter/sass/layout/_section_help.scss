@@ -51,6 +51,10 @@
 
         margin: 21px 0 0 0;
 
+        @include for-size(desktop){
+          margin: 24px 0 0 0;
+        }
+
         @include for-size(phone){
           font-size: 15px;
           line-height: 110%;
