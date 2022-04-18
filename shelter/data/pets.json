@@ -1,5 +1,6 @@
 [
   {
+    "id": "0",
     "name": "Jennifer",
     "img": "shelter/assets/images/desktop/pets-jenniferDesktop.jpeg",
     "type": "Dog",
@@ -17,6 +18,7 @@
     ]
   },
   {
+    "id": "1",
     "name": "Sophia",
     "img": "shelter/assets/images/desktop/pets-sophiaDesktop.jpeg",
     "type": "Dog",
@@ -34,6 +36,7 @@
     ]
   },
   {
+    "id": "2",
     "name": "Woody",
     "img": "shelter/assets/images/desktop/pets-woodyDesktop.jpeg",
     "type": "Dog",
@@ -52,6 +55,7 @@
     ]
   },
   {
+    "id": "3",
     "name": "Scarlett",
     "img": "shelter/assets/images/desktop/pets-scarletDesktop.jpeg",
     "type": "Dog",
@@ -69,6 +73,7 @@
     ]
   },
   {
+    "id": "4",
     "name": "Katrine",
     "img": "shelter/assets/images/desktop/pets-katrineDesktop.jpeg",
     "type": "Cat",
@@ -86,6 +91,7 @@
     ]
   },
   {
+    "id": "5",
     "name": "Timmy",
     "img": "shelter/assets/images/desktop/pets-timmyDesktop.jpeg",
     "type": "Cat",
@@ -104,6 +110,7 @@
     ]
   },
   {
+    "id": "6",
     "name": "Freddie",
     "img": "shelter/assets/images/desktop/pets-freddieDesktop.jpeg",
     "type": "Cat",
@@ -121,6 +128,7 @@
     ]
   },
   {
+    "id": "7",
     "name": "Charly",
     "img": "shelter/assets/images/desktop/pets-charlyDesktop.jpeg",
     "type": "Dog",
