@@ -67,9 +67,11 @@ function renderPets(pets) {
     whereToAdd.insertAdjacentHTML('afterend', markup);
   }
 
+  previousButton.addEventListener('click', renderedPageByClick);
 
+  nextButton.addEventListener('click', renderedPageByClick);
 
-  nextButton.addEventListener('click', function (event, card = cardNumber) {
+  function renderedPageByClick(event, card = cardNumber) {
 
     shuffleArray(pets);
 
@@ -97,15 +99,15 @@ function renderPets(pets) {
     }
     removedRenderedLi();
     //render next li page
-      for (let i = 0; i < card; i++) {
-        const markup = template({
-          name: filterPets[i].name,
-          img: filterPets[i].img,
-        })
-        const whereToAdd = document.querySelector('.placeToAdd');
-        whereToAdd.insertAdjacentHTML('afterend', markup);
-      }
-  })
+    for (let i = 0; i < card; i++) {
+      const markup = template({
+        name: filterPets[i].name,
+        img: filterPets[i].img,
+      })
+      const whereToAdd = document.querySelector('.placeToAdd');
+      whereToAdd.insertAdjacentHTML('afterend', markup);
+    }
+  }
 }
 
 //Slider
