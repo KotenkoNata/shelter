@@ -1,29 +1,28 @@
-//Burger menu
-// (() => {
-//   const refs = {
-//     openMenu: document.querySelector(".menu-icon"),
-//     menu: document.querySelector(".menu-body"),
-//     menuItems: document.querySelectorAll(".menu-body li"),
-//     body: document.querySelector('body'),
-//   };
-//
-//   function toggleModal() {
-//     refs.openMenu.classList.toggle("active");
-//     refs.menu.classList.toggle("active");
-//     refs.body.classList.toggle('lock');
-//   }
-//
-//   refs.openMenu.addEventListener("click", toggleModal);
-//
-//   refs.menu.addEventListener("click", toggleModal);
-//
-//   refs.menuItems.forEach(el => {
-//     el.addEventListener('click', toggleModal)
-//   })
-//
-// })();
+// Burger menu
 
-//Render cards
+  const refsBurger = {
+    openMenu: document.querySelector(".menu-icon"),
+    menu: document.querySelector(".menu-body"),
+    menuItems: document.querySelectorAll(".menu-body li"),
+    body: document.querySelector('body'),
+  };
+
+  function toggleBurger() {
+    refsBurger.openMenu.classList.toggle("active");
+    refsBurger.menu.classList.toggle("active");
+    refsBurger.body.classList.toggle('lock');
+  }
+
+refsBurger.openMenu.addEventListener("click", toggleBurger);
+
+refsBurger.menu.addEventListener("click", toggleBurger);
+
+refsBurger.menuItems.forEach(el => {
+    el.addEventListener('click', toggleBurger)
+  })
+
+
+//Slider
 fetch("./shelter/data/pets.json")
   .then(response => {
     return response.json();
@@ -110,9 +109,28 @@ function renderPets(pets) {
   }
 }
 
-//Slider
 
 
+//Modal window
+
+  const refsPopup = {
+    openPopup: document.querySelector("[data-modal-open]"),
+    closePopup: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+document.addEventListener("DOMContentLoaded", function () {
+  let openPopup = document.querySelector("[data-modal-open]")
+
+  openPopup.addEventListener("click", togglePopup);
+})
+
+
+// refsPopup.closePopup.addEventListener("click", togglePopup);
+
+  function togglePopup() {
+    refsPopup.modal.classList.toggle("is-hidden");
+  }
 
 
 

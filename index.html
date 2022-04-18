@@ -120,8 +120,8 @@
                         </button>
                     </li>
                     <template id='list-item'>
-                        <li class="menu__item" data-id="{{name}}">
-                            <a>
+                        <li class="menu__item" data-id="{{name}}" >
+                            <a class="list-link" data-modal-open>
                                 <picture>
                                     <img src="{{img}}" alt="{{name}}">
                                 </picture>
@@ -333,6 +333,17 @@
             </div>
         </div>
     </footer>
+</div>
+
+<div class="backdrop animation" data-modal>
+    <div class="modal animation">
+        <button class="pop-close-button">
+            <svg class="pop-close-icon" width="12px" height="12px">
+                <use href="./shelter/assets/icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+
 </div>
 <script src="shelter/pages/main/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"
