@@ -24,7 +24,6 @@
 
   text-align: center;
   width: 100%;
-  height: 500px;
 
   &:hover{
     cursor: auto;
@@ -32,6 +31,17 @@
 
   @include for-size(desktop){
     max-width: 900px;
+
+  }
+
+  @include for-size(tablet){
+    max-width: 630px;
+
+  }
+
+  @include for-size(phone){
+    max-width: 240px;
+
   }
 
   background-color: $grey-white;
@@ -63,6 +73,10 @@
   background-color: transparent;
   padding: 13px 18px;
 
+  @include for-size(phone){
+    right: -30px;
+  }
+
   &:hover{
     cursor: pointer;
     background-color: $beige;
@@ -76,9 +90,17 @@
 .popup__container{
   display: flex;
 
+  overflow: hidden;
+  border-radius: 9px;
+
   & .popup-img-container{
     margin-right: 29px;
-
+    @include for-size(tablet){
+      margin-right: 11px;
+    }
+    @include for-size(phone){
+      display: none;
+    }
   }
 
   & .popup-text-container{
@@ -87,9 +109,21 @@
     color: $burger-black;
 
     text-align: left;
-    max-width: 351px;
-
     padding: 50px 0 0 0;
+
+    @include for-size(desktop){
+      max-width: 351px;
+    }
+    @include for-size(tablet){
+      max-width: 260px;
+      padding: 10px 7px 0 0;
+    }
+
+    @include for-size(phone){
+      padding: 10px 10px 0 10px;
+
+      text-align: center;
+    }
 
     & h3{
       font-size: 35px;
@@ -102,9 +136,13 @@
     & .popup-bread{
       font-size: 20px;
       line-height: 115%;
-      margin: 0 0 40px 0;
+      margin: 0 0 20px 0;
       font-weight: normal;
       letter-spacing: 0.06em;
+
+      @include for-size(desktop){
+        margin: 0 0 40px 0;
+      }
     }
 
     & .popup-description{
@@ -112,7 +150,19 @@
       line-height: 110%;
       margin: 0 0 44px 0;
       font-weight: normal;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.1em;
+
+      @include for-size(tablet){
+        font-size: 13px;
+        margin: 0 0 20px 0;
+      }
+
+      @include for-size(phone){
+        font-size: 13px;
+        text-align: justify;
+        margin: 0 0 24px 0;
+        letter-spacing: 0.06em;
+      }
     }
   }
 }
@@ -121,9 +171,19 @@
   line-height: 110%;
   letter-spacing: 0.06em;
 
+  @include for-size(phone){
+    text-align: left;
+  }
+
   & li{
-    font-size: 16px;
-    margin-bottom: 11px;
+    font-size: 15px;
+    margin-bottom: 6px;
+
+    @include for-size(desktop){
+      font-size: 16px;
+      margin-bottom: 11px;
+    }
+
   }
 
   & li::before{
@@ -132,6 +192,10 @@
     font-weight: bold;
     display: inline-block;
     margin: 0 4px 0 0;
+
+    @include for-size(tablet){
+      margin: 0 2px 0 0;
+    }
   }
 
   & li span{

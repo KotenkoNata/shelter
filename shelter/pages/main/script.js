@@ -33,14 +33,9 @@ fetch("./shelter/data/pets.json")
 // This function will be triggered when index.html is loaded
 // and the date from the pets.json has been received.
 function onPageLoaded(pets) {
-  renderPets(pets)
+  renderPets(pets);
 
 }
-
-
-
-
-
 
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
@@ -53,7 +48,6 @@ function shuffleArray(arr) {
   }
   return arr;
 }
-
 
 function renderPets(pets) {
   const html = document.querySelector('#list-item').innerHTML.trim();
@@ -121,18 +115,19 @@ function renderPets(pets) {
       const whereToAdd = document.querySelector('.placeToAdd');
       whereToAdd.insertAdjacentHTML('afterend', markup);
     }
+
+    onDOMContentLoaded();
   }
 }
 
 
 //Modal window
-
 const refsPopup = {
   closePopup: document.querySelector("[data-modal-close]"),
   modal: document.querySelector("[data-modal]"),
 };
 
-document.addEventListener("DOMContentLoaded", onDOMContentLoaded)
+document.addEventListener("DOMContentLoaded", onDOMContentLoaded);
 
 function onDOMContentLoaded() {
 

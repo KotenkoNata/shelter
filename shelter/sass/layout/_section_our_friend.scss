@@ -60,6 +60,11 @@
 
     &:hover{
       cursor: pointer;
+
+      & button:hover{
+        cursor: pointer;
+        background-color: $beige;
+      }
     }
 
     @include for-size(phone){
