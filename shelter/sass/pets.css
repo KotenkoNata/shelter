@@ -350,6 +350,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.block-scroll {
+  overflow-y: hidden;
+}
+
 body {
   font-family: "Arial", sans-serif;
   font-weight: 400;

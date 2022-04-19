@@ -128,7 +128,6 @@ function renderPets(pets) {
 //Modal window
 
 const refsPopup = {
-  openPopup: document.querySelector(".menu__item"),
   closePopup: document.querySelector("[data-modal-close]"),
   modal: document.querySelector("[data-modal]"),
 };
@@ -143,6 +142,9 @@ function onDOMContentLoaded() {
     openPopup.addEventListener("click", function openPopup(event) {
       event.preventDefault();
 
+      const htmlScroll = document.querySelector('html');
+      htmlScroll.classList.add('block-scroll');
+
       fetch("./shelter/data/pets.json")
         .then(response => {
           return response.json();
@@ -151,22 +153,15 @@ function onDOMContentLoaded() {
 
       let idPet = event.target.dataset.id;
 
-      console.log(`idPet`,idPet)
-
       function renderedPopupPet(pets) {
 
         function filteredPets() {
           return pets.filter(function (pet) {
-            console.log(pet.name === idPet)
             return pet.name === idPet;
           });
         }
 
         let renderPet = filteredPets();
-
-        console.log( `renderPet`, renderPet[0].name)
-
-
         const html = document.querySelector('#popup-item').innerHTML.trim();
         const template = Handlebars.compile(html);
 
@@ -191,15 +186,37 @@ function onDOMContentLoaded() {
   })
 }
 
+// Close Popup
 
 refsPopup.closePopup.addEventListener("click", closePopup);
 
-function closePopup(event) {
+window.onclick = function(event) {
+  if (event.target === refsPopup.modal) {
+    refsPopup.modal.classList.toggle("is-hidden");
 
+    //remove class block-scroll for HTML element
+    const htmlScroll = document.querySelector('html');
+    htmlScroll.classList.remove('block-scroll');
+
+    //clear popup container
+    let html = document.querySelector('.popup__container');
+    html.remove();
+  }
 }
 
+function closePopup() {
+    refsPopup.modal.classList.toggle("is-hidden");
 
-//popup render
+
+  //remove class block-scroll for HTML element
+  const htmlScroll = document.querySelector('html');
+  htmlScroll.classList.remove('block-scroll');
+
+  //clear popup container
+  let html = document.querySelector('.popup__container');
+  html.remove();
+}
+
 
 
 

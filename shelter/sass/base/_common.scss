@@ -5,6 +5,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.block-scroll{
+  overflow-y: hidden;
+}
+
 body {
   font-family: $arial;
   font-weight: 400;

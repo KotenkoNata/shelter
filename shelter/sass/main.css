@@ -351,6 +351,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.block-scroll {
+  overflow-y: hidden;
+}
+
 body {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -518,6 +522,9 @@ body.lock {
   opacity: 1;
   transition-property: opacity;
 }
+.backdrop:hover {
+  cursor: pointer;
+}
 
 .modal {
   position: absolute;
@@ -532,6 +539,9 @@ body.lock {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition-property: transform;
+}
+.modal:hover {
+  cursor: auto;
 }
 @media (min-width: 1280px) {
   .modal {
@@ -557,6 +567,10 @@ body.lock {
   border: 2px solid #F1CDB3;
   background-color: transparent;
   padding: 13px 18px;
+}
+.pop-close-button:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
 }
 
 .pop-close-icon {
