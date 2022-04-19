@@ -132,6 +132,32 @@ document.addEventListener("DOMContentLoaded", function () {
     refsPopup.modal.classList.toggle("is-hidden");
   }
 
+//popup render
 
+fetch("./shelter/data/pets.json")
+  .then(response => {
+    return response.json();
+  })
+  .then(renderedPopupPet);
+
+function renderedPopupPet(pets) {
+  const html = document.querySelector('#popup-item').innerHTML.trim();
+  const template = Handlebars.compile(html);
+
+  const markup = template({
+    name: pets[0].name,
+    imgModal: pets[0].imgModal,
+    type: pets[0].type,
+    breed: pets[0].breed,
+    description: pets[0].description,
+    age: pets[0].age,
+    inoculations: pets[0].inoculations,
+    diseases: pets[0].diseases,
+    parasites: pets[0].parasites,
+  })
+
+  const whereToAdd = document.querySelector('.pop-close-button');
+  whereToAdd.insertAdjacentHTML('afterend', markup);
+}
 
 

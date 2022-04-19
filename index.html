@@ -342,6 +342,35 @@
                 <use href="./shelter/assets/icons/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
+
+        <template id='popup-item'>
+            <div class="popup__container">
+                <div class="popup-img-container">
+                        <img src="{{imgModal}}" alt="{{name}}">
+                </div>
+                <div class="popup-text-container">
+                    <h3>{{name}}</h3>
+                    <p class="popup-bread">{{type}} - {{breed}}</p>
+
+                    <p class="popup-description">{{description}}</p>
+
+                    <ul class="popup-list">
+                        <li>
+                            <span>Age:</span> {{age}}
+                        </li>
+                        <li>
+                            <span>Inoculations:</span> {{inoculations}}
+                        </li>
+                        <li>
+                            <span>Diseases:</span> {{diseases}}
+                        </li>
+                        <li>
+                            <span>Parasites:</span> {{parasites}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </template>
     </div>
 
 </div>

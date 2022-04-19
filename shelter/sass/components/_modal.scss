@@ -6,7 +6,7 @@
   bottom: 0;
   overflow-y: scroll;
 
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(41, 41, 41, 0.6);
   z-index: 100;
 
   opacity: 1;
@@ -17,14 +17,18 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 40px;
 
-  max-width: 450px;
   text-align: center;
   width: 100%;
+  height: 500px;
 
-  background-color: white;
-  border-radius: 4px;
+  @include for-size(desktop){
+    max-width: 900px;
+  }
+
+  background-color: $grey-white;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  border-radius: 9px;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 
@@ -43,6 +47,9 @@
 }
 
 .pop-close-button{
+  position: absolute;
+  top: -52px;
+  right: -42px;
   border-radius: 100px;
   border: 2px solid $beige;
   background-color: transparent;
@@ -52,3 +59,70 @@
 .pop-close-icon{
   fill: $black;
 }
+
+.popup__container{
+  display: flex;
+
+  & .popup-img-container{
+    margin-right: 29px;
+
+  }
+
+  & .popup-text-container{
+
+    font-family:$georgia;
+    color: $burger-black;
+
+    text-align: left;
+    max-width: 351px;
+
+    padding: 50px 0 0 0;
+
+    & h3{
+      font-size: 35px;
+      line-height: 130%;
+      margin: 0 0 10px 0;
+      font-weight: normal;
+      letter-spacing: 0.06em;
+    }
+
+    & .popup-bread{
+      font-size: 20px;
+      line-height: 115%;
+      margin: 0 0 40px 0;
+      font-weight: normal;
+      letter-spacing: 0.06em;
+    }
+
+    & .popup-description{
+      font-style: normal;
+      line-height: 110%;
+      margin: 0 0 44px 0;
+      font-weight: normal;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+
+.popup-list{
+  line-height: 110%;
+  letter-spacing: 0.06em;
+
+  & li{
+    font-size: 16px;
+    margin-bottom: 11px;
+  }
+
+  & li::before{
+    content: "•";
+    color: $beige;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 4px 0 0;
+  }
+
+  & li span{
+    font-weight: bold;
+  }
+}
+
