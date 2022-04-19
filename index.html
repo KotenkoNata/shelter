@@ -121,13 +121,13 @@
                     </li>
                     <template id='list-item'>
                         <li class="menu__item" data-id="{{name}}" >
-                            <a class="list-link" data-modal-open>
+                            <a class="list-link" data-id="{{name}}">
                                 <picture>
-                                    <img src="{{img}}" alt="{{name}}">
+                                    <img src="{{img}}" alt="{{name}}" data-id="{{name}}">
                                 </picture>
 
-                                <p>{{name}}</p>
-                                <button class="light-button">Learn more</button>
+                                <p data-id="{{name}}">{{name}}</p>
+                                <button class="light-button" data-id="{{name}}">Learn more</button>
                             </a>
                         </li>
                     </template>
@@ -335,9 +335,9 @@
     </footer>
 </div>
 
-<div class="backdrop animation" data-modal>
+<div class="backdrop is-hidden animation" data-modal>
     <div class="modal animation">
-        <button class="pop-close-button">
+        <button class="pop-close-button" data-modal-close>
             <svg class="pop-close-icon" width="12px" height="12px">
                 <use href="./shelter/assets/icons/symbol-defs.svg#icon-close"></use>
             </svg>

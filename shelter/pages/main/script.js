@@ -1,33 +1,46 @@
 // Burger menu
 
-  const refsBurger = {
-    openMenu: document.querySelector(".menu-icon"),
-    menu: document.querySelector(".menu-body"),
-    menuItems: document.querySelectorAll(".menu-body li"),
-    body: document.querySelector('body'),
-  };
+const refsBurger = {
+  openMenu: document.querySelector(".menu-icon"),
+  menu: document.querySelector(".menu-body"),
+  menuItems: document.querySelectorAll(".menu-body li"),
+  body: document.querySelector('body'),
+};
 
-  function toggleBurger() {
-    refsBurger.openMenu.classList.toggle("active");
-    refsBurger.menu.classList.toggle("active");
-    refsBurger.body.classList.toggle('lock');
-  }
+function toggleBurger() {
+  refsBurger.openMenu.classList.toggle("active");
+  refsBurger.menu.classList.toggle("active");
+  refsBurger.body.classList.toggle('lock');
+}
 
 refsBurger.openMenu.addEventListener("click", toggleBurger);
 
 refsBurger.menu.addEventListener("click", toggleBurger);
 
 refsBurger.menuItems.forEach(el => {
-    el.addEventListener('click', toggleBurger)
-  })
+  el.addEventListener('click', toggleBurger)
+})
 
 
-//Slider
+// Slider
 fetch("./shelter/data/pets.json")
   .then(response => {
     return response.json();
   })
-  .then(renderPets);
+  .then(onPageLoaded);
+
+
+// This function will be triggered when index.html is loaded
+// and the date from the pets.json has been received.
+function onPageLoaded(pets) {
+  renderPets(pets)
+
+}
+
+
+
+
+
 
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
@@ -89,6 +102,7 @@ function renderPets(pets) {
 
     //find li elements and filter
     const filterPets = filteredArray();
+
     //clear li from DOM
     function removedRenderedLi() {
       let renderLi = document.querySelectorAll('.menu__item');
@@ -96,6 +110,7 @@ function renderPets(pets) {
         element.remove();
       })
     }
+
     removedRenderedLi();
     //render next li page
     for (let i = 0; i < card; i++) {
@@ -110,54 +125,84 @@ function renderPets(pets) {
 }
 
 
-
 //Modal window
 
-  const refsPopup = {
-    openPopup: document.querySelector("[data-modal-open]"),
-    closePopup: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
+const refsPopup = {
+  openPopup: document.querySelector(".menu__item"),
+  closePopup: document.querySelector("[data-modal-close]"),
+  modal: document.querySelector("[data-modal]"),
+};
 
-document.addEventListener("DOMContentLoaded", function () {
-  let openPopup = document.querySelector("[data-modal-open]")
+document.addEventListener("DOMContentLoaded", onDOMContentLoaded)
 
-  openPopup.addEventListener("click", togglePopup);
-})
+function onDOMContentLoaded() {
+
+  const openPopups = document.querySelectorAll("li.menu__item");
+
+  openPopups.forEach(openPopup => {
+    openPopup.addEventListener("click", function openPopup(event) {
+      event.preventDefault();
+
+      fetch("./shelter/data/pets.json")
+        .then(response => {
+          return response.json();
+        })
+        .then(renderedPopupPet);
+
+      let idPet = event.target.dataset.id;
+
+      console.log(`idPet`,idPet)
+
+      function renderedPopupPet(pets) {
+
+        function filteredPets() {
+          return pets.filter(function (pet) {
+            console.log(pet.name === idPet)
+            return pet.name === idPet;
+          });
+        }
+
+        let renderPet = filteredPets();
+
+        console.log( `renderPet`, renderPet[0].name)
 
 
-// refsPopup.closePopup.addEventListener("click", togglePopup);
+        const html = document.querySelector('#popup-item').innerHTML.trim();
+        const template = Handlebars.compile(html);
 
-  function togglePopup() {
-    refsPopup.modal.classList.toggle("is-hidden");
-  }
+        const markup = template({
+          name: renderPet[0].name,
+          imgModal: renderPet[0].imgModal,
+          type: renderPet[0].type,
+          breed: renderPet[0].breed,
+          description: renderPet[0].description,
+          age: renderPet[0].age,
+          inoculations: renderPet[0].inoculations,
+          diseases: renderPet[0].diseases,
+          parasites: renderPet[0].parasites,
+        })
+
+        const whereToAdd = document.querySelector('.pop-close-button');
+        whereToAdd.insertAdjacentHTML('afterend', markup);
+      }
+
+      refsPopup.modal.classList.toggle("is-hidden");
+    });
+  })
+}
+
+
+refsPopup.closePopup.addEventListener("click", closePopup);
+
+function closePopup(event) {
+
+}
+
 
 //popup render
 
-fetch("./shelter/data/pets.json")
-  .then(response => {
-    return response.json();
-  })
-  .then(renderedPopupPet);
 
-function renderedPopupPet(pets) {
-  const html = document.querySelector('#popup-item').innerHTML.trim();
-  const template = Handlebars.compile(html);
 
-  const markup = template({
-    name: pets[0].name,
-    imgModal: pets[0].imgModal,
-    type: pets[0].type,
-    breed: pets[0].breed,
-    description: pets[0].description,
-    age: pets[0].age,
-    inoculations: pets[0].inoculations,
-    diseases: pets[0].diseases,
-    parasites: pets[0].parasites,
-  })
 
-  const whereToAdd = document.querySelector('.pop-close-button');
-  whereToAdd.insertAdjacentHTML('afterend', markup);
-}
 
 
