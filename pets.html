@@ -196,27 +196,27 @@
         </ul>
             <ul class="pets-list-control">
                 <li>
-                    <button class="first" disabled>
+                    <button class="first" data-page="first">
                         <<
                     </button>
                 </li>
                 <li>
-                    <button class="second" disabled>
+                    <button class="second" data-page="previous">
                         <
                     </button>
                 </li>
                 <li>
-                    <button class="third">
+                    <button class="third" data-page="number">
                         1
                     </button>
                 </li>
                 <li>
-                    <button class="fourth">
+                    <button class="fourth" data-page="next">
                         >
                     </button>
                 </li>
                 <li>
-                    <button class="fifth">
+                    <button class="fifth" data-page="last">
                         >>
                     </button>
                 </li>
@@ -304,6 +304,45 @@
         </div>
     </div>
 </footer>
+</div>
+<div class="backdrop is-hidden animation" data-modal>
+    <div class="modal animation">
+        <button class="pop-close-button animation" data-modal-close>
+            <svg class="pop-close-icon" width="12px" height="12px">
+                <use href="./shelter/assets/icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <template id='popup-item'>
+            <div class="popup__container">
+                <div class="popup-img-container">
+                    <img src="{{imgModal}}" alt="{{name}}">
+                </div>
+                <div class="popup-text-container">
+                    <h3>{{name}}</h3>
+                    <p class="popup-bread">{{type}} - {{breed}}</p>
+
+                    <p class="popup-description">{{description}}</p>
+
+                    <ul class="popup-list">
+                        <li>
+                            <span>Age:</span> {{age}}
+                        </li>
+                        <li>
+                            <span>Inoculations:</span> {{inoculations}}
+                        </li>
+                        <li>
+                            <span>Diseases:</span> {{diseases}}
+                        </li>
+                        <li>
+                            <span>Parasites:</span> {{parasites}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </template>
+    </div>
+
 </div>
 <script type="text/javascript" src="shelter/pages/pets/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"

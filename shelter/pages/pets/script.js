@@ -36,6 +36,26 @@ function myFunction() {
   })
 
 
+//shuffle array
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+//Pagination
+
+const openFirstPage = document.querySelector('.first');
+const openLastPage = document.querySelector('.fifth');
+
+const openNextPage = document.querySelector('.fourth');
+const openPreviousPage = document.querySelector('.second');
+
+const pageNumber = document.querySelector('.third');
+
+
 //Render pets cards
 fetch("./shelter/data/pets.json")
   .then(response => {
@@ -44,13 +64,14 @@ fetch("./shelter/data/pets.json")
   .then(renderPets);
 
 function renderPets(pets) {
+
   const html = document.querySelector('#list-item').innerHTML.trim();
-  console.log(html)
   const template = Handlebars.compile(html);
 
-  console.log(template)
-
   let cardNumber = 0;
+
+  const randomArray = shuffleArray(pets);
+
 
   if (window.screen.width >= 1280) {
     cardNumber = 8;
@@ -62,13 +83,196 @@ function renderPets(pets) {
 
   for (let i = 0; i < cardNumber; i++) {
     const markup = template({
-      name: pets[i].name,
-      img: pets[i].img,
+      name: randomArray[i].name,
+      img: randomArray[i].img,
     })
 
     const whereToAdd = document.querySelector('.pets-friends-list');
     whereToAdd.insertAdjacentHTML('afterbegin', markup);
   }
+
+
+
+  openNextPage.addEventListener('click', renderPageByClick);
+  openLastPage.addEventListener('click', renderPageByClick);
+  openPreviousPage.addEventListener('click', renderPageByClick);
+  openFirstPage.addEventListener('click',renderPageByClick);
+
+
+  function renderPageByClick(event, card = cardNumber) {
+
+    let numberOfPage = parseInt(pageNumber.innerHTML);
+
+    //clear li from DOM
+    function removedRenderedLi() {
+      let renderLi = document.querySelectorAll('.menu__item');
+      renderLi.forEach(element => {
+        element.remove();
+      })
+    }
+
+    removedRenderedLi();
+
+    if(event.target.dataset.page === 'next'){
+
+      console.log(numberOfPage * card, ((numberOfPage + 1) * card))
+
+      for (let i = numberOfPage * card; i < ((numberOfPage + 1) * card); i++) {
+
+        const markup = template({
+          name: randomArray[i].name,
+          img: randomArray[i].img,
+        })
+
+        const whereToAdd = document.querySelector('.pets-friends-list');
+        whereToAdd.insertAdjacentHTML('afterbegin', markup);
+        changePageNumber(numberOfPage+1);
+      }
+
+
+    }
+    if(event.target.dataset.page === 'last'){
+
+      for (let i = randomArray.length - card; i < randomArray.length; i++) {
+        const markup = template({
+          name: randomArray[i].name,
+          img: randomArray[i].img,
+        })
+
+        const whereToAdd = document.querySelector('.pets-friends-list');
+        whereToAdd.insertAdjacentHTML('afterbegin', markup);
+        changePageNumber(randomArray.length / card);
+      }
+    }
+    if(event.target.dataset.page === 'first'){
+
+      for (let i = 0; i < card; i++) {
+        const markup = template({
+          name: randomArray[i].name,
+          img: randomArray[i].img,
+        })
+
+        const whereToAdd = document.querySelector('.pets-friends-list');
+        whereToAdd.insertAdjacentHTML('afterbegin', markup);
+        changePageNumber(1);
+      }
+    }
+    if(event.target.dataset.page === 'previous'){
+
+      for (let i = ((numberOfPage - 2) * card); i < ((numberOfPage - 1) * card); i++) {
+
+        const markup = template({
+          name: randomArray[i].name,
+          img: randomArray[i].img,
+        })
+
+        const whereToAdd = document.querySelector('.pets-friends-list');
+        whereToAdd.insertAdjacentHTML('afterbegin', markup);
+        changePageNumber(numberOfPage-1);
+      }
+    }
+
+  }
 }
+
+function changePageNumber(number) {
+  pageNumber.innerHTML = `${number}`;
+}
+
+//Modal window
+const refsPopup = {
+  closePopup: document.querySelector("[data-modal-close]"),
+  modal: document.querySelector("[data-modal]"),
+};
+
+document.addEventListener("DOMContentLoaded", onDOMContentLoaded);
+
+function onDOMContentLoaded() {
+
+  const openPopups = document.querySelectorAll("li.menu__item");
+
+  openPopups.forEach(openPopup => {
+    openPopup.addEventListener("click", function openPopup(event) {
+      event.preventDefault();
+
+      const htmlScroll = document.querySelector('html');
+      htmlScroll.classList.add('block-scroll');
+
+      fetch("./shelter/data/pets.json")
+        .then(response => {
+          return response.json();
+        })
+        .then(renderedPopupPet);
+
+      let idPet = event.target.dataset.id;
+
+      function renderedPopupPet(pets) {
+
+        function filteredPets() {
+          return pets.filter(function (pet) {
+            return pet.name === idPet;
+          });
+        }
+
+        let renderPet = filteredPets();
+        const html = document.querySelector('#popup-item').innerHTML.trim();
+        const template = Handlebars.compile(html);
+
+        const markup = template({
+          name: renderPet[0].name,
+          imgModal: renderPet[0].imgModal,
+          type: renderPet[0].type,
+          breed: renderPet[0].breed,
+          description: renderPet[0].description,
+          age: renderPet[0].age,
+          inoculations: renderPet[0].inoculations,
+          diseases: renderPet[0].diseases,
+          parasites: renderPet[0].parasites,
+        })
+
+        const whereToAdd = document.querySelector('.pop-close-button');
+        whereToAdd.insertAdjacentHTML('afterend', markup);
+      }
+
+      refsPopup.modal.classList.toggle("is-hidden");
+    });
+  })
+}
+
+// Close Popup
+
+refsPopup.closePopup.addEventListener("click", closePopup);
+
+window.onclick = function(event) {
+  if (event.target === refsPopup.modal) {
+    refsPopup.modal.classList.toggle("is-hidden");
+
+    //remove class block-scroll for HTML element
+    const htmlScroll = document.querySelector('html');
+    htmlScroll.classList.remove('block-scroll');
+
+    //clear popup container
+    let html = document.querySelector('.popup__container');
+    html.remove();
+  }
+}
+
+function closePopup() {
+  refsPopup.modal.classList.toggle("is-hidden");
+
+
+  //remove class block-scroll for HTML element
+  const htmlScroll = document.querySelector('html');
+  htmlScroll.classList.remove('block-scroll');
+
+  //clear popup container
+  let html = document.querySelector('.popup__container');
+  html.remove();
+}
+
+
+
+
+
 
 
