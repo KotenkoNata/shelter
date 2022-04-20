@@ -34,7 +34,6 @@ fetch("./shelter/data/pets.json")
 // and the date from the pets.json has been received.
 function onPageLoaded(pets) {
   renderPets(pets);
-
 }
 
 const nextButton = document.querySelector('.next');

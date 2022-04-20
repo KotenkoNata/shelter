@@ -1,3 +1,5 @@
+//sticky header
+
 window.onscroll = function() {myFunction()};
 
 let header = document.getElementById("petsHeader");
@@ -12,8 +14,6 @@ function myFunction() {
 }
 
 //Burger menu
-
-(() => {
   const refs = {
     openMenu: document.querySelector(".menu-icon"),
     menu: document.querySelector(".menu-body"),
@@ -35,4 +35,40 @@ function myFunction() {
     el.addEventListener('click', toggleModal)
   })
 
-})();
+
+//Render pets cards
+fetch("./shelter/data/pets.json")
+  .then(response => {
+    return response.json();
+  })
+  .then(renderPets);
+
+function renderPets(pets) {
+  const html = document.querySelector('#list-item').innerHTML.trim();
+  console.log(html)
+  const template = Handlebars.compile(html);
+
+  console.log(template)
+
+  let cardNumber = 0;
+
+  if (window.screen.width >= 1280) {
+    cardNumber = 8;
+  } else if (window.screen.width < 1280 || window.screen.width <= 768) {
+    cardNumber = 6;
+  } else if (window.screen.width < 768) {
+    cardNumber = 3;
+  }
+
+  for (let i = 0; i < cardNumber; i++) {
+    const markup = template({
+      name: pets[i].name,
+      img: pets[i].img,
+    })
+
+    const whereToAdd = document.querySelector('.pets-friends-list');
+    whereToAdd.insertAdjacentHTML('afterbegin', markup);
+  }
+}
+
+
