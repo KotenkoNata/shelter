@@ -180,8 +180,8 @@
     "img": "shelter/assets/images/desktop/Bella-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Bella-Modal.jpeg",
     "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "breed": "Dachshund",
+    "description": "Bella is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -200,7 +200,7 @@
     "imgModal": "shelter/assets/images/modal/Bo-Modal.jpeg",
     "type": "Dog",
     "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "description": "Bo is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -217,9 +217,9 @@
     "name": "Chloe",
     "img": "shelter/assets/images/desktop/Chloe-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Chloe-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Chloe is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -274,9 +274,9 @@
     "name": "Jack",
     "img": "shelter/assets/images/desktop/Jack-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Jack-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Jack is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -293,9 +293,9 @@
     "name": "Jasper",
     "img": "shelter/assets/images/desktop/Jasper-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Jasper-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Jasper is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -350,9 +350,9 @@
     "name": "Katie",
     "img": "shelter/assets/images/desktop/Katie-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Katie-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Katie is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -388,9 +388,9 @@
     "name": "Klue",
     "img": "shelter/assets/images/desktop/Klue-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Klue-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Goat",
+    "breed": "Goat",
+    "description": "Klue is a sweet 2 months old goat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -445,9 +445,9 @@
     "name": "Loki",
     "img": "shelter/assets/images/desktop/Loki-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Loki-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Jennifer is a sweet 2 months old cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -464,9 +464,9 @@
     "name": "Lola",
     "img": "shelter/assets/images/desktop/Lola-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Lola-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Lola is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -521,9 +521,9 @@
     "name": "Luna",
     "img": "shelter/assets/images/desktop/Luna-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Luna-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Jennifer is a sweet 2 months old cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -597,9 +597,9 @@
     "name": "Mo",
     "img": "shelter/assets/images/desktop/Mo-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Mo-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Mo is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -616,9 +616,9 @@
     "name": "Mu",
     "img": "shelter/assets/images/desktop/Mu-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Mu-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Jennifer is a sweet 2 months old cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -635,9 +635,9 @@
     "name": "Nala",
     "img": "shelter/assets/images/desktop/Nala-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Nala-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Nala is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -654,9 +654,9 @@
     "name": "Ollie",
     "img": "shelter/assets/images/desktop/Ollie-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Ollie-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Ollie is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -673,9 +673,9 @@
     "name": "Oprah",
     "img": "shelter/assets/images/desktop/Oprah-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Oprah-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Oprah is a sweet 2 months old cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -689,9 +689,9 @@
   },
   {
     "id": "36",
-    "name": "Oprah",
-    "img": "shelter/assets/images/desktop/Oprah-Desktop.jpeg",
-    "imgModal": "shelter/assets/images/modal/Oprah-Modal.jpeg",
+    "name": "Oscar",
+    "img": "shelter/assets/images/desktop/Oscar-Desktop.jpeg",
+    "imgModal": "shelter/assets/images/modal/Oscar-Modal.jpeg",
     "type": "Dog",
     "breed": "Labrador",
     "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
@@ -711,9 +711,9 @@
     "name": "Peta",
     "img": "shelter/assets/images/desktop/Peta-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Peta-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Guinea pig",
+    "breed": "Guinea pig",
+    "description": "Peta is a sweet 2 months old Guinea pig that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -749,9 +749,9 @@
     "name": "Simba",
     "img": "shelter/assets/images/desktop/Simba-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Simba-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Rabbit",
+    "breed": "Rabbit",
+    "description": "Simba is a sweet 2 months old Rabbit that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -806,9 +806,9 @@
     "name": "Suga",
     "img": "shelter/assets/images/desktop/Suga-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Suga-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Suga is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -825,9 +825,9 @@
     "name": "Taylor",
     "img": "shelter/assets/images/desktop/Taylor-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Taylor-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Taylor is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -863,9 +863,9 @@
     "name": "Tom",
     "img": "shelter/assets/images/desktop/Tom-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Tom-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Tom is a sweet 2 months old Cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
@@ -882,9 +882,9 @@
     "name": "Vicky",
     "img": "shelter/assets/images/desktop/Vicky-Desktop.jpeg",
     "imgModal": "shelter/assets/images/modal/Vicky-Modal.jpeg",
-    "type": "Dog",
-    "breed": "Labrador",
-    "description": "Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
+    "type": "Cat",
+    "breed": "Cat",
+    "description": "Vicky is a sweet 2 months old cat that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.",
     "age": "2 months",
     "inoculations": [
       "none"
