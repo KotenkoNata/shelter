@@ -49,10 +49,8 @@ function shuffleArray(arr) {
 
 const openFirstPage = document.querySelector('.first');
 const openLastPage = document.querySelector('.fifth');
-
 const openNextPage = document.querySelector('.fourth');
 const openPreviousPage = document.querySelector('.second');
-
 const pageNumber = document.querySelector('.third');
 
 
@@ -65,6 +63,9 @@ fetch("./shelter/data/pets.json")
 
 function renderPets(pets) {
 
+  openFirstPage.disabled = true;
+  openPreviousPage.disabled = true;
+
   const html = document.querySelector('#list-item').innerHTML.trim();
   const template = Handlebars.compile(html);
 
@@ -75,11 +76,13 @@ function renderPets(pets) {
 
   if (window.screen.width >= 1280) {
     cardNumber = 8;
-  } else if (window.screen.width < 1280 || window.screen.width <= 768) {
+  } else if (window.screen.width < 1280 && window.screen.width >= 768) {
     cardNumber = 6;
   } else if (window.screen.width < 768) {
     cardNumber = 3;
   }
+
+  console.log(`card`, cardNumber)
 
   for (let i = 0; i < cardNumber; i++) {
     const markup = template({
@@ -115,8 +118,6 @@ function renderPets(pets) {
 
     if(event.target.dataset.page === 'next'){
 
-      console.log(numberOfPage * card, ((numberOfPage + 1) * card))
-
       for (let i = numberOfPage * card; i < ((numberOfPage + 1) * card); i++) {
 
         const markup = template({
@@ -126,6 +127,10 @@ function renderPets(pets) {
 
         const whereToAdd = document.querySelector('.pets-friends-list');
         whereToAdd.insertAdjacentHTML('afterbegin', markup);
+        openFirstPage.disabled = false;
+        openPreviousPage.disabled = false;
+        openLastPage.disabled = false;
+        openNextPage.disabled = false;
         changePageNumber(numberOfPage+1);
       }
 
@@ -144,6 +149,7 @@ function renderPets(pets) {
         changePageNumber(randomArray.length / card);
       }
     }
+
     if(event.target.dataset.page === 'first'){
 
       for (let i = 0; i < card; i++) {
@@ -155,8 +161,10 @@ function renderPets(pets) {
         const whereToAdd = document.querySelector('.pets-friends-list');
         whereToAdd.insertAdjacentHTML('afterbegin', markup);
         changePageNumber(1);
+
       }
     }
+
     if(event.target.dataset.page === 'previous'){
 
       for (let i = ((numberOfPage - 2) * card); i < ((numberOfPage - 1) * card); i++) {
@@ -168,6 +176,10 @@ function renderPets(pets) {
 
         const whereToAdd = document.querySelector('.pets-friends-list');
         whereToAdd.insertAdjacentHTML('afterbegin', markup);
+        openFirstPage.disabled = false;
+        openPreviousPage.disabled = false;
+        openLastPage.disabled = false;
+        openNextPage.disabled = false;
         changePageNumber(numberOfPage-1);
       }
     }
@@ -177,6 +189,19 @@ function renderPets(pets) {
 
 function changePageNumber(number) {
   pageNumber.innerHTML = `${number}`;
+
+  if(number === 1){
+    openFirstPage.disabled = true;
+    openPreviousPage.disabled = true;
+    openLastPage.disabled = false;
+    openNextPage.disabled = false;
+  }
+  if(number === 6 || number === 8 || number === 16){
+    openLastPage.disabled = true;
+    openNextPage.disabled = true;
+    openFirstPage.disabled = false;
+    openPreviousPage.disabled = false;
+  }
 }
 
 //Modal window
