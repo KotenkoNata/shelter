@@ -13,7 +13,7 @@
 .footer-main-container{
   @include for-size(desktop){
     display: flex;
-    padding-top: 40px;
+    padding-top: 38px;
   }
 
   @include for-size(tablet){
@@ -36,7 +36,7 @@
 
   & .footer-container{
     display: flex;
-    justify-content: flex-start;
+
 
     @include for-size(phone){
       padding-top: 30px;
@@ -45,8 +45,8 @@
     }
 
     @include for-size(desktop){
-      margin-top: 16px;
-      margin-right: 40px;
+      justify-content: space-between;
+      margin-top: 20px;
     }
   }
 
@@ -62,14 +62,14 @@
 
     & .footer-contact-title-container{
       @include for-size(desktop){
-      max-width: 300px;
+        max-width: 300px;
       }
     }
   }
 
   & .footer-address{
     @include for-size(tablet) {
-    width: calc((100% - 60px) / 2);
+      width: calc((100% - 60px) / 2);
     }
 
     @include for-size(desktop){
@@ -193,5 +193,4 @@
     margin: 0 auto;
   }
 }
-
 

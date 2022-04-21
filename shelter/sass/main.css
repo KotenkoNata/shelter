@@ -1053,7 +1053,7 @@ button.light-button {
 @media (min-width: 1280px) {
   .footer-main-container {
     display: flex;
-    padding-top: 40px;
+    padding-top: 38px;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -1077,7 +1077,6 @@ button.light-button {
 }
 .footer-main-container .footer-container {
   display: flex;
-  justify-content: flex-start;
 }
 @media (max-width: 767px) {
   .footer-main-container .footer-container {
@@ -1088,8 +1087,8 @@ button.light-button {
 }
 @media (min-width: 1280px) {
   .footer-main-container .footer-container {
-    margin-top: 16px;
-    margin-right: 40px;
+    justify-content: space-between;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1280px) {

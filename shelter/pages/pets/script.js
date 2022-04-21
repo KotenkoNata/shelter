@@ -82,8 +82,6 @@ function renderPets(pets) {
     cardNumber = 3;
   }
 
-  console.log(`card`, cardNumber)
-
   for (let i = 0; i < cardNumber; i++) {
     const markup = template({
       name: randomArray[i].name,
