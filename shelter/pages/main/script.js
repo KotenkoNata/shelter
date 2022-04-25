@@ -3,7 +3,7 @@
 const refsBurger = {
   openMenu: document.querySelector(".menu-icon"),
   menu: document.querySelector(".menu-body"),
-  menuItems: document.querySelectorAll(".menu-body li"),
+  menuItems: document.querySelectorAll(".menu-body > li"),
   body: document.querySelector('body'),
 };
 
@@ -14,7 +14,6 @@ function toggleBurger() {
 }
 
 refsBurger.openMenu.addEventListener("click", toggleBurger);
-
 refsBurger.menu.addEventListener("click", toggleBurger);
 
 refsBurger.menuItems.forEach(el => {
