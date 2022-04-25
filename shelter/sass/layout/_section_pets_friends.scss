@@ -164,11 +164,11 @@
     padding: 12px 10px;
   }
 
-  & li .first, .second{
+  & li .no-active{
     color: $grey;
   }
 
-  & li .fourth, .fifth{
+  & li .active{
     border-color: $beige;
   }
 
@@ -182,6 +182,4 @@
     border-color: $beige;
     background-color: $beige;
   }
-
-
 }

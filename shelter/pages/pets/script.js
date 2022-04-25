@@ -129,6 +129,10 @@ function renderPets(pets) {
         openPreviousPage.disabled = false;
         openLastPage.disabled = false;
         openNextPage.disabled = false;
+        openFirstPage.classList.add('active');
+        openPreviousPage.classList.add('active');
+        openLastPage.classList.add('active');
+        openNextPage.classList.add('active');
         changePageNumber(numberOfPage+1);
       }
 
@@ -144,6 +148,7 @@ function renderPets(pets) {
 
         const whereToAdd = document.querySelector('.pets-friends-list');
         whereToAdd.insertAdjacentHTML('afterbegin', markup);
+
         changePageNumber(randomArray.length / card);
       }
     }
@@ -158,6 +163,7 @@ function renderPets(pets) {
 
         const whereToAdd = document.querySelector('.pets-friends-list');
         whereToAdd.insertAdjacentHTML('afterbegin', markup);
+
         changePageNumber(1);
 
       }
@@ -178,6 +184,11 @@ function renderPets(pets) {
         openPreviousPage.disabled = false;
         openLastPage.disabled = false;
         openNextPage.disabled = false;
+        openFirstPage.classList.add('active');
+        openPreviousPage.classList.add('active');
+        openLastPage.classList.add('active');
+        openNextPage.classList.add('active');
+
         changePageNumber(numberOfPage-1);
       }
     }
@@ -193,12 +204,20 @@ function changePageNumber(number) {
     openPreviousPage.disabled = true;
     openLastPage.disabled = false;
     openNextPage.disabled = false;
+    openFirstPage.classList.remove('active');
+    openPreviousPage.classList.remove('active');
+    openLastPage.classList.add('active')
+    openNextPage.classList.add('active')
   }
   if(number === 6 || number === 8 || number === 16){
     openLastPage.disabled = true;
     openNextPage.disabled = true;
     openFirstPage.disabled = false;
     openPreviousPage.disabled = false;
+    openLastPage.classList.remove('active')
+    openNextPage.classList.remove('active')
+    openFirstPage.classList.add('active')
+    openPreviousPage.classList.add('active')
   }
 }
 

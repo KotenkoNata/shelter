@@ -1076,10 +1076,10 @@ button.light-button {
 .pets-list-control li .first, .pets-list-control .fifth {
   padding: 12px 10px;
 }
-.pets-list-control li .first, .pets-list-control .second {
+.pets-list-control li .no-active {
   color: #CDCDCD;
 }
-.pets-list-control li .fourth, .pets-list-control .fifth {
+.pets-list-control li .active {
   border-color: #F1CDB3;
 }
 .pets-list-control li .second, .pets-list-control .fourth {
